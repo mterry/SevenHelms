@@ -1,0 +1,2609 @@
+MUD2.BAS Control Flow Analysis
+============================================================
+
+Total Line Labels: 362
+Total GOTO Statements: 2209
+
+Line Labels by Category:
+------------------------------------------------------------
+
+Act 1 - Encampment & Labyrinth Level 1:
+         209 (line   494): CLS
+         210 (line   505): INPUT ">", A$
+         215 (line   560): PRINT "Do you wish to save <Y/N>?"
+         220 (line   583): CLS
+         225 (line   628): INPUT ">", A0$
+         230 (line   707): CLS
+         235 (line   716): COLOR 15
+         236 (line   734): INPUT ">", SirJacobA1$
+         240 (line   811): CLS
+         241 (line   828): CLS
+         245 (line   850): INPUT ">", A1$
+         250 (line   906): CLS
+         255 (line   929): INPUT ">", A2$
+         260 (line   970): CLS
+         265 (line   996): INPUT ">", A4$
+         270 (line  1038): CLS
+         275 (line  1064): INPUT ">", A5$
+         280 (line  1115): CLS
+         285 (line  1140): INPUT ">", A6$
+         290 (line  1192): CLS
+         295 (line  1220): INPUT ">", A3$
+         300 (line  1300): CLS
+         305 (line  1329): INPUT ">", A8$
+         310 (line  1370): CLS
+         315 (line  1396): INPUT ">", A7$
+         320 (line  1448): CLS
+         325 (line  1474): INPUT ">", A9$
+         330 (line  1525): CLS
+         335 (line  1547): INPUT ">", A10$
+         340 (line  1597): CLS
+         345 (line  1629): INPUT ">", A11$
+         350 (line  1712): CLS
+         355 (line  1740): INPUT ">", A12$
+         360 (line  1827): CLS
+         365 (line  1853): INPUT ">", A13$
+         370 (line  1906): CLS
+         375 (line  1933): INPUT ">", A14$
+         380 (line  1994): CLS
+         385 (line  2015): INPUT ">", A15$
+         390 (line  2065): CLS
+         395 (line  2086): INPUT ">", A16$
+
+Act 1 - Encampment Areas:
+         700 (line  3924): CLS
+         705 (line  3943): INPUT ">", A37$
+         710 (line  3994): CLS
+         715 (line  4011): INPUT ">", A38$
+         720 (line  4062): CLS
+         725 (line  4081): INPUT ">", A39$
+         730 (line  4133): CLS
+         735 (line  4150): INPUT ">", A40$
+         740 (line  4200): CLS
+         745 (line  4219): INPUT ">", A41$
+         750 (line  4271): CLS
+         755 (line  4328): INPUT ">", A42$
+         760 (line  4399): CLS
+         765 (line  4418): INPUT ">", A43$
+         770 (line  4468): CLS
+         775 (line  4487): INPUT ">", A44$
+         780 (line  4537): CLS
+         785 (line  4556): INPUT ">", A45$
+         790 (line  4606): CLS
+         795 (line  4625): INPUT ">", A46$
+         800 (line  4675): CLS
+         805 (line  4684): INPUT ">", A47$
+         810 (line  4743): CLS
+         813 (line  4764): INPUT ">", A48$
+         815 (line  4832): CLS
+         817 (line  4851): INPUT ">", A49$
+         818 (line  4858): INPUT ">", OGEM$
+         820 (line  4924): CLS
+         825 (line  4942): INPUT ">", A50$
+         830 (line  4993): CLS
+         835 (line  5012): INPUT ">", A51$
+         840 (line  5063): CLS
+         845 (line  5086): INPUT ">", A52$
+         850 (line  5141): CLS
+         855 (line  5164): INPUT ">", A53$
+         860 (line  5219): CLS
+         865 (line  5242): INPUT ">", A54$
+         870 (line  5297): CLS
+         875 (line  5320): INPUT ">", A55$
+         880 (line  5375): CLS
+         885 (line  5406): INPUT ">", A56$
+         890 (line  5469): CLS
+         895 (line  5489): INPUT ">", A57$
+         900 (line  5541): CLS
+         905 (line  5558): INPUT ">", A58$
+         907 (line  5565): INPUT ">", GGEM$
+         910 (line  5631): CLS
+         915 (line  5648): INPUT ">", A59$
+         917 (line  5655): INPUT ">", RGEM$
+         920 (line  5721): CLS
+         925 (line  5741): INPUT ">", A60$
+         930 (line  5793): CLS
+         935 (line  5810): INPUT ">", A61$
+         937 (line  5817): INPUT ">", BGEM$
+         940 (line  5883): CLS
+         945 (line  5900): INPUT ">", A62$
+         947 (line  5907): INPUT ">", JGEM$
+         950 (line  5973): CLS
+         955 (line  5993): INPUT ">", A63$
+         960 (line  6044): CLS
+         965 (line  6061): INPUT ">", A64$
+         967 (line  6068): INPUT ">", BLOODGEM$
+         970 (line  6134): CLS
+         975 (line  6151): INPUT ">", A65$
+         977 (line  6158): INPUT ">", WGEM$
+         980 (line  6225): CLS
+         985 (line  6242): INPUT ">", A66$
+         987 (line  6249): INPUT ">", BlueGEM$
+         990 (line  6321): CLS
+         995 (line  6353): INPUT ">", A67$
+         996 (line  6415): COLOR 5
+         997 (line  6419): INPUT ">", SirJacobA67$
+         998 (line   405): PRINT "Vampire> So do you wan't another hint? (50 
+         999 (line   457): END SUB
+
+Act 1 - Labyrinth Levels 2-3:
+         500 (line  2136): CLS
+         505 (line  2160): INPUT ">", A17$
+         510 (line  2209): CLS
+         515 (line  2249): INPUT ">", A18$
+         520 (line  2314): CLS
+         525 (line  2346): INPUT ">", A19$
+         530 (line  2437): CLS
+         535 (line  2466): INPUT ">", A20$
+         540 (line  2540): CLS
+         545 (line  2565): INPUT ">", A21$
+         550 (line  2616): CLS
+         555 (line  2644): INPUT ">", A22$
+         560 (line  2696): CLS
+         565 (line  2722): INPUT ">", A23$
+         570 (line  2783): CLS
+         575 (line  2809): INPUT ">", A24$
+         580 (line  2866): CLS
+         585 (line  2875): INPUT ">", A25$
+         590 (line  2925): CLS
+         595 (line  2944): INPUT ">", A26$
+         600 (line  3015): CLS
+         605 (line  3045): INPUT ">", A27$
+         610 (line  3140): CLS
+         615 (line  3156): INPUT ">", A28$
+         620 (line  3229): CLS
+         625 (line  3266): INPUT ">", A29$
+         630 (line  3348): CLS
+         635 (line  3356): INPUT ">", A30$
+         640 (line  3406): CLS
+         645 (line  3414): INPUT ">", A31$
+         650 (line  3464): CLS
+         655 (line  3483): INPUT ">", A32$
+         660 (line  3597): CLS
+         665 (line  3607): INPUT ">", A33$
+         670 (line  3665): CLS
+         675 (line  3701): INPUT ">", A34$
+         677 (line  3760): PRINT "Do you wish to save <Y/N>?"
+         680 (line  3785): CLS
+         685 (line  3804): INPUT ">", A35$
+         690 (line  3856): CLS
+         695 (line  3873): INPUT ">", A36$
+
+Battle System (Advanced):
+        1000 (line  7382): PRINT "What would you like to do?"
+        1007 (line  8756): PRINT "Do you want to save? <Y/N>"
+        1011 (line 10445): PRINT "What do you want to do?"
+        1012 (line 10460): INPUT "What is your command?>", Fam$
+        1013 (line 10862): END SUB
+        1020 (line  7618): PRINT "What would you like to do?"
+        1070 (line  8052): PRINT "You attempt to parry the "; ENEMY$; "'s blo
+        1080 (line  8062): 
+        1090 (line  8082): 
+        1510 (line  9469): END SUB
+
+Battle System (Basic):
+        2000 (line  7192): RANDOMIZE TIMER
+        2001 (line  7281): PlayerReflect% = 0
+        2500 (line  6585): END SUB
+        2999 (line 11395): COLOR 15
+
+Character Creation:
+           0 (line  8222): CLS
+           1 (line  6679): PRINT "What would you like to do?"
+        1.05 (line 12938): CLS
+         1.1 (line 12944): PRINT "What is your choice? <1-3>"
+         1.2 (line 12954): CLS
+        1.25 (line 12959): PRINT "What is your choice?"
+         1.3 (line 12978): CLS
+        1.35 (line 12988): PRINT "What is your choice?"
+         1.7 (line 13034): END SUB
+          10 (line  8230): INPUT ">", SexA$
+          11 (line  6518): PRINT "The "; ENEMY$; " starts circling "; Name$; 
+          12 (line  6520): PRINT "The "; ENEMY$; " attacks."
+          13 (line  6548): PRINT "The "; ENEMY$; " steps back and seems to co
+          14 (line  6551): PRINT "The "; ENEMY$; " feels disgusted that "; Na
+          15 (line  6553): INPUT "Do you wish to run and cut him down"; DECIS
+          16 (line  6565): PRINT "The "; ENEMY$; " leaps in close and starts 
+          20 (line  6851): PRINT "What would you like to do?"
+          21 (line  8240): PRINT "Please select "; Name$; "'s class."
+        21.5 (line  8285): PRINT "Choose your familiar:"
+          22 (line  8327): RANDOMIZE TIMER
+          24 (line  8378): PRINT "Do you wish to redo the character creation 
+          25 (line  8389): END SUB
+          27 (line  9300): END SUB
+
+Equipment & Shop:
+         400 (line  9964): END SUB
+         410 (line 10193): END SUB
+         430 (line 13138): COLOR 2
+         431 (line 13144): INPUT ">", A2S$
+         445 (line 13152): IF Quest% = 1 THEN
+         450 (line 13168): COLOR 5
+         460 (line 13393): displayinventory
+         470 (line 13636): END SUB
+
+Magic/Runes & Boss Battles:
+        3000 (line 12085): END SUB
+        3001 (line 11512): 
+        3002 (line 11519): 
+        3003 (line 11526): 
+        3004 (line 11533): 
+        3005 (line 11537): 
+        3006 (line 11549): 
+        3007 (line 11556): 
+        3008 (line 11563): 
+        3009 (line 11570): 
+        3010 (line 11577): 
+        3011 (line 11589): 
+        3012 (line 11594): 
+        3013 (line 11601): 
+        3014 (line 11613): 
+        3015 (line 11620): 
+        3016 (line 11627): 
+        3017 (line 11634): 
+        3018 (line 11641): 
+        3019 (line 11644): 
+        3020 (line 11647): 
+        3021 (line 11654): 
+        3022 (line 11666): 
+        3023 (line 11673): 
+        3024 (line 11678): 
+        3025 (line 11681): 
+        3026 (line 11688): 
+        3027 (line 11691): 
+        3028 (line 11699): 
+        3029 (line 11706): 
+        3030 (line 11709): 
+        3031 (line 11716): 
+        3032 (line 11723): 
+        3033 (line 11730): 
+        3034 (line 11736): 
+        3035 (line 11740): 
+        3036 (line 11743): 
+        3037 (line 11748): 
+        3038 (line 11753): 
+        3039 (line 11756): 
+        3040 (line 11762): 
+        3041 (line 11769): 
+        3042 (line 11776): 
+        3043 (line 11779): 
+        3044 (line 11782): 
+        3045 (line 11785): 
+        3046 (line 11792): 
+        3047 (line 11795): 
+        3048 (line 11798): 
+        3049 (line 11812): 
+        3050 (line 11819): 
+        3051 (line 11824): 
+        3052 (line 11831): 
+        3053 (line 11838): 
+        3054 (line 11841): 
+        3055 (line 11845): 
+        3056 (line 11853): 
+        3057 (line 11857): 
+        3058 (line 11860): 
+        3059 (line 11863): 
+        3060 (line 11866): 
+        3061 (line 11873): 
+        3062 (line 11880): PRINT "You freeze your opponent!"
+        3063 (line 11886): 
+        3064 (line 11893): 
+        3065 (line 11897): 
+        3066 (line 11904): 
+        3067 (line 11911): 
+        3068 (line 11916): 
+        3069 (line 11918): 
+        3070 (line 11921): 
+        3071 (line 11923): 
+        3072 (line 11931): 
+        3073 (line 11938): 
+        3074 (line 11945): 
+        3075 (line 11949): 
+        3076 (line 11953): 
+        3077 (line 11957): 
+        3078 (line 11965): 
+        3079 (line 11967): 
+        3080 (line 11970): 
+        3081 (line 11979): 
+        3082 (line 11982): 
+        3083 (line 11985): 
+        3084 (line 11992): 
+        3085 (line 11999): 
+        3086 (line 12006): 
+        3087 (line 12013): 
+        3088 (line 12020): 
+        3089 (line 12023): 
+        3090 (line 12030): PRINT "Lightning never strikes twice!"
+        3091 (line 12032): 
+        3092 (line 12037): 
+        3093 (line 12044): 
+        3094 (line 12051): 
+        3095 (line 12054): 
+        3096 (line 12057): 
+        3097 (line 12064): 
+        3098 (line 12071): 
+        3099 (line 12078): 
+        3100 (line 12081): 
+        3500 (line 14440): IF StunTime% = 0 THEN XanathusFleeTime% = Xanathus
+        3600 (line 14632): 
+        3700 (line 14982): PRINT "You attempt to parry Xanathus' blow."
+        3800 (line 14992): 
+        3900 (line 15016): 
+        3950 (line 15031): PRINT "As Xanathus attacks, you attempt to dodge h
+        3975 (line 15042): IF XanathusHP% <= 3 THEN
+        3976 (line 14346): PRINT "Xanathus casts a spell of curing on himself
+        3977 (line 14351): PRINT "Xanathus casts magic arrow!"
+        3978 (line 14378): PRINT "Xanathus casts Hand of Dust!"
+        3979 (line 14392): PRINT "Xanathus prepares to flee!"
+        3980 (line 14396): RANDOMIZE TIMER
+        3989 (line 14414): 'Miscasts
+        3990 (line 14419): END SUB
+
+Main Menu & System:
+        9900 (line 13118): END SUB
+        9998 (line 12096): CLS
+        9999 (line 12110): INPUT ">", Menu$
+       10000 (line 12156): END SUB
+     10000.1 (line 14276): END SUB
+    10000.15 (line 14090): PRINT "Your owl spell list:"
+       10100 (line  8101): PRINT "As the "; ENEMY$; " attacks, you attempt to
+       10110 (line  8112): IF ENEMYPTS% <= 3 THEN
+
+Necrotalia Boss Battle:
+       35000 (line 12314): PRINT "What would you like to do?"
+       36000 (line 12458): PRINT "What would you like to do?"
+       37000 (line 12765): PRINT "You attempt to parry Necrotalia's blow."
+       38000 (line 12775): 
+       39000 (line 12782): 
+       39500 (line 12789): PRINT "As Necrotalia attacks, you attempt to dodge
+       39750 (line 12800): IF NecrotaliaHP% <= 30 THEN
+       39760 (line 12183): PRINT "Necrotalia stands there and laughs"
+       39770 (line 12186): PRINT "Necrotalia casts fire"
+       39780 (line 12213): PRINT "Necrotalia casts Gaze of Death!"
+       39790 (line 12266): PRINT "Necrotalia jumps forward and slashes you!"
+       39800 (line 12274): PRINT "Necrotalia casts hand of dust!"
+       39890 (line 12296): 
+       39900 (line 12297): END SUB
+
+Necrotalia Fight Scene:
+     1000000 (line 12818): CLS
+     1000005 (line 12827): INPUT ">", Necro$
+
+Other:
+         0.1 (line  6609): RANDOMIZE TIMER                        'SELECTING 
+         0.2 (line  6656): RANDOMIZE TIMER                        'RANDOMIZIN
+         0.9 (line  9979): PRINT "Equip what in the Right Hand?"
+          70 (line  7136): PRINT "You attempt to parry the "; ENEMY$; "'s blo
+          80 (line  7146): 
+          90 (line  7161): 
+         100 (line  7175): PRINT "As the "; ENEMY$; " attacks, you attempt to
+         110 (line  7186): IF ENEMYPTS% <= 3 THEN
+        4000 (line 15054): RANDOMIZE TIMER
+        4001 (line 15141): StunTime% = 0
+        5000 (line 11114): COLOR 15
+     19999.9 (line 13044): RANDOMIZE TIMER
+       40000 (line 12811): 
+       40010 (line 12812): 
+
+Save/Load System:
+       99998 (line 11200): PRINT "Which save posistion do you want to save to
+       99999 (line 11240): PRINT "Which save game do you wish to load? <1-5>"
+      100000 (line 11277): END SUB
+      100001 (line 13852): END SUB
+      100002 (line 11390): END SUB
+      101010 (line  8478): END SUB
+      102000 (line  8123): RANDOMIZE TIMER
+      102001 (line  8210): PlayerReflect% = 0
+
+
+GOTO Connections:
+------------------------------------------------------------
+Line   411 (label        ???) -> 998
+Line   420 (label        ???) -> 998
+Line   430 (label        ???) -> 998
+Line   440 (label        ???) -> 998
+Line   451 (label        ???) -> 999
+Line   455 (label        ???) -> 998
+Line   463 (label        ???) -> 350
+Line   464 (label        ???) -> 650
+Line   465 (label        ???) -> 230
+Line   472 (label        ???) -> 230
+Line   488 (label        ???) -> 230
+Line   506 (label        ???) -> 220
+Line   507 (label        ???) -> 240
+Line   508 (label        ???) -> 220
+Line   509 (label        ???) -> 240
+Line   512 (label        ???) -> 210
+Line   515 (label        ???) -> 210
+Line   517 (label        ???) -> 209
+Line   518 (label        ???) -> 210
+Line   521 (label        ???) -> 210
+Line   524 (label        ???) -> 210
+Line   527 (label        ???) -> 210
+Line   530 (label        ???) -> 210
+Line   533 (label        ???) -> 210
+Line   536 (label        ???) -> 210
+Line   539 (label        ???) -> 210
+Line   548 (label        ???) -> 210
+Line   569 (label        ???) -> 210
+Line   572 (label        ???) -> 210
+Line   576 (label        ???) -> 215
+Line   581 (label        ???) -> 210
+Line   631 (label        ???) -> 230
+Line   638 (label        ???) -> 225
+Line   646 (label        ???) -> 225
+Line   651 (label        ???) -> 225
+Line   655 (label        ???) -> 225
+Line   657 (label        ???) -> 220
+Line   660 (label        ???) -> 225
+Line   663 (label        ???) -> 225
+Line   666 (label        ???) -> 225
+Line   669 (label        ???) -> 225
+Line   672 (label        ???) -> 225
+Line   675 (label        ???) -> 225
+Line   678 (label        ???) -> 225
+Line   687 (label        ???) -> 225
+Line   699 (label        ???) -> 225
+Line   705 (label        ???) -> 225
+Line   718 (label        ???) -> 220
+Line   719 (label        ???) -> 220
+Line   723 (label        ???) -> 240
+Line   741 (label        ???) -> 235
+Line   744 (label        ???) -> 235
+Line   749 (label        ???) -> 236
+Line   752 (label        ???) -> 235
+Line   755 (label        ???) -> 235
+Line   757 (label        ???) -> 230
+Line   758 (label        ???) -> 235
+Line   761 (label        ???) -> 235
+Line   764 (label        ???) -> 235
+Line   767 (label        ???) -> 235
+Line   770 (label        ???) -> 235
+Line   773 (label        ???) -> 235
+Line   776 (label        ???) -> 235
+Line   779 (label        ???) -> 235
+Line   789 (label        ???) -> 235
+Line   808 (label        ???) -> 210
+Line   826 (label        ???) -> 241
+Line   843 (label        ???) -> 241
+Line   853 (label        ???) -> 230
+Line   855 (label        ???) -> 250
+Line   858 (label        ???) -> 245
+Line   861 (label        ???) -> 245
+Line   863 (label        ???) -> 241
+Line   864 (label        ???) -> 245
+Line   867 (label        ???) -> 245
+Line   870 (label        ???) -> 245
+Line   873 (label        ???) -> 245
+Line   876 (label        ???) -> 245
+Line   879 (label        ???) -> 245
+Line   882 (label        ???) -> 245
+Line   885 (label        ???) -> 245
+Line   902 (label        ???) -> 245
+Line   921 (label        ???) -> 250
+Line   930 (label        ???) -> 260
+Line   931 (label        ???) -> 270
+Line   932 (label        ???) -> 240
+Line   934 (label        ???) -> 255
+Line   936 (label        ???) -> 225
+Line   937 (label        ???) -> 250
+Line   938 (label        ???) -> 255
+Line   940 (label        ???) -> 255
+Line   942 (label        ???) -> 255
+Line   944 (label        ???) -> 255
+Line   946 (label        ???) -> 255
+Line   948 (label        ???) -> 255
+Line   950 (label        ???) -> 255
+Line   952 (label        ???) -> 255
+Line   961 (label        ???) -> 255
+Line   967 (label        ???) -> 255
+Line   987 (label        ???) -> 260
+Line   997 (label        ???) -> 250
+Line   998 (label        ???) -> 270
+Line   999 (label        ???) -> 290
+Line  1000 (label        ???) -> 300
+Line  1002 (label        ???) -> 265
+Line  1003 (label        ???) -> 260
+Line  1004 (label        ???) -> 265
+Line  1006 (label        ???) -> 265
+Line  1008 (label        ???) -> 265
+Line  1010 (label        ???) -> 265
+Line  1012 (label        ???) -> 265
+Line  1014 (label        ???) -> 265
+Line  1016 (label        ???) -> 265
+Line  1018 (label        ???) -> 265
+Line  1020 (label        ???) -> 265
+Line  1029 (label        ???) -> 265
+Line  1035 (label        ???) -> 265
+Line  1055 (label        ???) -> 270
+Line  1065 (label        ???) -> 250
+Line  1066 (label        ???) -> 280
+Line  1067 (label        ???) -> 310
+Line  1068 (label        ???) -> 260
+Line  1071 (label        ???) -> 275
+Line  1074 (label        ???) -> 275
+Line  1076 (label        ???) -> 270
+Line  1077 (label        ???) -> 275
+Line  1080 (label        ???) -> 275
+Line  1083 (label        ???) -> 275
+Line  1086 (label        ???) -> 275
+Line  1089 (label        ???) -> 275
+Line  1092 (label        ???) -> 275
+Line  1095 (label        ???) -> 275
+Line  1097 (label        ???) -> 225
+Line  1106 (label        ???) -> 275
+Line  1112 (label        ???) -> 275
+Line  1131 (label        ???) -> 270
+Line  1141 (label        ???) -> 270
+Line  1142 (label        ???) -> 320
+Line  1145 (label        ???) -> 285
+Line  1148 (label        ???) -> 285
+Line  1150 (label        ???) -> 280
+Line  1151 (label        ???) -> 285
+Line  1154 (label        ???) -> 285
+Line  1157 (label        ???) -> 285
+Line  1160 (label        ???) -> 285
+Line  1163 (label        ???) -> 285
+Line  1166 (label        ???) -> 285
+Line  1169 (label        ???) -> 285
+Line  1172 (label        ???) -> 285
+Line  1182 (label        ???) -> 285
+Line  1189 (label        ???) -> 285
+Line  1214 (label        ???) -> 290
+Line  1221 (label        ???) -> 260
+Line  1230 (label        ???) -> 295
+Line  1248 (label        ???) -> 290
+Line  1253 (label        ???) -> 295
+Line  1256 (label        ???) -> 295
+Line  1258 (label        ???) -> 290
+Line  1259 (label        ???) -> 295
+Line  1262 (label        ???) -> 295
+Line  1265 (label        ???) -> 295
+Line  1268 (label        ???) -> 295
+Line  1271 (label        ???) -> 295
+Line  1274 (label        ???) -> 295
+Line  1277 (label        ???) -> 295
+Line  1280 (label        ???) -> 295
+Line  1290 (label        ???) -> 295
+Line  1297 (label        ???) -> 295
+Line  1320 (label        ???) -> 300
+Line  1330 (label        ???) -> 260
+Line  1331 (label        ???) -> 310
+Line  1332 (label        ???) -> 330
+Line  1334 (label        ???) -> 305
+Line  1336 (label        ???) -> 305
+Line  1337 (label        ???) -> 300
+Line  1339 (label        ???) -> 305
+Line  1341 (label        ???) -> 305
+Line  1343 (label        ???) -> 305
+Line  1345 (label        ???) -> 305
+Line  1347 (label        ???) -> 305
+Line  1349 (label        ???) -> 305
+Line  1351 (label        ???) -> 305
+Line  1360 (label        ???) -> 305
+Line  1367 (label        ???) -> 305
+Line  1387 (label        ???) -> 310
+Line  1397 (label        ???) -> 270
+Line  1398 (label        ???) -> 320
+Line  1399 (label        ???) -> 300
+Line  1400 (label        ???) -> 360
+Line  1403 (label        ???) -> 315
+Line  1406 (label        ???) -> 225
+Line  1408 (label        ???) -> 310
+Line  1409 (label        ???) -> 315
+Line  1412 (label        ???) -> 315
+Line  1415 (label        ???) -> 315
+Line  1418 (label        ???) -> 315
+Line  1421 (label        ???) -> 315
+Line  1424 (label        ???) -> 315
+Line  1427 (label        ???) -> 315
+Line  1429 (label        ???) -> 315
+Line  1438 (label        ???) -> 315
+Line  1445 (label        ???) -> 315
+Line  1466 (label        ???) -> 320
+Line  1475 (label        ???) -> 280
+Line  1476 (label        ???) -> 310
+Line  1477 (label        ???) -> 340
+Line  1480 (label        ???) -> 325
+Line  1483 (label        ???) -> 325
+Line  1485 (label        ???) -> 320
+Line  1486 (label        ???) -> 325
+Line  1489 (label        ???) -> 325
+Line  1492 (label        ???) -> 325
+Line  1495 (label        ???) -> 325
+Line  1498 (label        ???) -> 325
+Line  1501 (label        ???) -> 325
+Line  1504 (label        ???) -> 325
+Line  1506 (label        ???) -> 325
+Line  1515 (label        ???) -> 325
+Line  1522 (label        ???) -> 325
+Line  1540 (label        ???) -> 330
+Line  1548 (label        ???) -> 500
+Line  1549 (label        ???) -> 300
+Line  1552 (label        ???) -> 335
+Line  1555 (label        ???) -> 335
+Line  1557 (label        ???) -> 330
+Line  1558 (label        ???) -> 335
+Line  1561 (label        ???) -> 335
+Line  1564 (label        ???) -> 335
+Line  1567 (label        ???) -> 335
+Line  1570 (label        ???) -> 335
+Line  1573 (label        ???) -> 335
+Line  1576 (label        ???) -> 335
+Line  1578 (label        ???) -> 335
+Line  1587 (label        ???) -> 335
+Line  1594 (label        ???) -> 335
+Line  1619 (label        ???) -> 340
+Line  1630 (label        ???) -> 320
+Line  1633 (label        ???) -> 350
+Line  1643 (label        ???) -> 345
+Line  1655 (label        ???) -> 345
+Line  1662 (label        ???) -> 345
+Line  1667 (label        ???) -> 345
+Line  1670 (label        ???) -> 345
+Line  1672 (label        ???) -> 340
+Line  1673 (label        ???) -> 345
+Line  1676 (label        ???) -> 345
+Line  1679 (label        ???) -> 345
+Line  1682 (label        ???) -> 345
+Line  1685 (label        ???) -> 345
+Line  1688 (label        ???) -> 345
+Line  1691 (label        ???) -> 345
+Line  1693 (label        ???) -> 345
+Line  1702 (label        ???) -> 345
+Line  1709 (label        ???) -> 345
+Line  1741 (label        ???) -> 340
+Line  1755 (label        ???) -> 355
+Line  1766 (label        ???) -> 355
+Line  1777 (label        ???) -> 355
+Line  1782 (label        ???) -> 355
+Line  1785 (label        ???) -> 355
+Line  1787 (label        ???) -> 350
+Line  1788 (label        ???) -> 355
+Line  1791 (label        ???) -> 355
+Line  1794 (label        ???) -> 355
+Line  1797 (label        ???) -> 355
+Line  1800 (label        ???) -> 355
+Line  1803 (label        ???) -> 355
+Line  1806 (label        ???) -> 355
+Line  1808 (label        ???) -> 355
+Line  1817 (label        ???) -> 355
+Line  1824 (label        ???) -> 355
+Line  1844 (label        ???) -> 360
+Line  1854 (label        ???) -> 310
+Line  1855 (label        ???) -> 370
+Line  1856 (label        ???) -> 380
+Line  1857 (label        ???) -> 390
+Line  1860 (label        ???) -> 365
+Line  1863 (label        ???) -> 365
+Line  1865 (label        ???) -> 300
+Line  1866 (label        ???) -> 365
+Line  1869 (label        ???) -> 365
+Line  1872 (label        ???) -> 365
+Line  1875 (label        ???) -> 365
+Line  1878 (label        ???) -> 365
+Line  1881 (label        ???) -> 365
+Line  1884 (label        ???) -> 365
+Line  1886 (label        ???) -> 365
+Line  1896 (label        ???) -> 365
+Line  1903 (label        ???) -> 365
+Line  1927 (label        ???) -> 370
+Line  1934 (label        ???) -> 360
+Line  1943 (label        ???) -> 375
+Line  1948 (label        ???) -> 375
+Line  1951 (label        ???) -> 375
+Line  1953 (label        ???) -> 370
+Line  1954 (label        ???) -> 375
+Line  1957 (label        ???) -> 375
+Line  1960 (label        ???) -> 375
+Line  1963 (label        ???) -> 375
+Line  1966 (label        ???) -> 375
+Line  1969 (label        ???) -> 375
+Line  1972 (label        ???) -> 375
+Line  1974 (label        ???) -> 375
+Line  1984 (label        ???) -> 375
+Line  1991 (label        ???) -> 375
+Line  2009 (label        ???) -> 380
+Line  2016 (label        ???) -> 360
+Line  2019 (label        ???) -> 385
+Line  2022 (label        ???) -> 385
+Line  2024 (label        ???) -> 380
+Line  2025 (label        ???) -> 385
+Line  2028 (label        ???) -> 385
+Line  2031 (label        ???) -> 385
+Line  2034 (label        ???) -> 385
+Line  2037 (label        ???) -> 385
+Line  2040 (label        ???) -> 385
+Line  2043 (label        ???) -> 385
+Line  2045 (label        ???) -> 385
+Line  2055 (label        ???) -> 385
+Line  2062 (label        ???) -> 385
+Line  2080 (label        ???) -> 390
+Line  2087 (label        ???) -> 360
+Line  2090 (label        ???) -> 395
+Line  2093 (label        ???) -> 395
+Line  2095 (label        ???) -> 390
+Line  2096 (label        ???) -> 395
+Line  2099 (label        ???) -> 395
+Line  2102 (label        ???) -> 395
+Line  2105 (label        ???) -> 395
+Line  2108 (label        ???) -> 395
+Line  2111 (label        ???) -> 395
+Line  2114 (label        ???) -> 395
+Line  2116 (label        ???) -> 395
+Line  2126 (label        ???) -> 395
+Line  2133 (label        ???) -> 395
+Line  2153 (label        ???) -> 500
+Line  2161 (label        ???) -> 330
+Line  2162 (label        ???) -> 510
+Line  2165 (label        ???) -> 505
+Line  2168 (label        ???) -> 500
+Line  2170 (label        ???) -> 500
+Line  2173 (label        ???) -> 505
+Line  2176 (label        ???) -> 505
+Line  2179 (label        ???) -> 505
+Line  2182 (label        ???) -> 505
+Line  2185 (label        ???) -> 505
+Line  2188 (label        ???) -> 505
+Line  2190 (label        ???) -> 505
+Line  2200 (label        ???) -> 505
+Line  2206 (label        ???) -> 505
+Line  2240 (label        ???) -> 510
+Line  2250 (label        ???) -> 500
+Line  2251 (label        ???) -> 520
+Line  2252 (label        ???) -> 530
+Line  2253 (label        ???) -> 540
+Line  2256 (label        ???) -> 515
+Line  2259 (label        ???) -> 510
+Line  2261 (label        ???) -> 510
+Line  2264 (label        ???) -> 515
+Line  2267 (label        ???) -> 515
+Line  2270 (label        ???) -> 515
+Line  2273 (label        ???) -> 515
+Line  2276 (label        ???) -> 515
+Line  2279 (label        ???) -> 515
+Line  2282 (label        ???) -> 515
+Line  2292 (label        ???) -> 515
+Line  2305 (label        ???) -> 515
+Line  2311 (label        ???) -> 515
+Line  2335 (label        ???) -> 520
+Line  2352 (label        ???) -> 525
+Line  2354 (label        ???) -> 620
+Line  2362 (label        ???) -> 525
+Line  2364 (label        ???) -> 570
+Line  2374 (label        ???) -> 525
+Line  2386 (label        ???) -> 525
+Line  2389 (label        ???) -> 530
+Line  2390 (label        ???) -> 510
+Line  2393 (label        ???) -> 525
+Line  2396 (label        ???) -> 520
+Line  2398 (label        ???) -> 520
+Line  2401 (label        ???) -> 525
+Line  2404 (label        ???) -> 525
+Line  2407 (label        ???) -> 525
+Line  2410 (label        ???) -> 525
+Line  2413 (label        ???) -> 525
+Line  2416 (label        ???) -> 525
+Line  2418 (label        ???) -> 525
+Line  2428 (label        ???) -> 525
+Line  2434 (label        ???) -> 525
+Line  2456 (label        ???) -> 530
+Line  2467 (label        ???) -> 520
+Line  2468 (label        ???) -> 550
+Line  2469 (label        ???) -> 510
+Line  2478 (label        ???) -> 535
+Line  2482 (label        ???) -> 530
+Line  2488 (label        ???) -> 535
+Line  2490 (label        ???) -> 570
+Line  2494 (label        ???) -> 535
+Line  2497 (label        ???) -> 530
+Line  2499 (label        ???) -> 530
+Line  2502 (label        ???) -> 535
+Line  2505 (label        ???) -> 535
+Line  2508 (label        ???) -> 535
+Line  2511 (label        ???) -> 535
+Line  2514 (label        ???) -> 535
+Line  2517 (label        ???) -> 535
+Line  2520 (label        ???) -> 535
+Line  2530 (label        ???) -> 535
+Line  2536 (label        ???) -> 535
+Line  2557 (label        ???) -> 540
+Line  2566 (label        ???) -> 510
+Line  2567 (label        ???) -> 550
+Line  2568 (label        ???) -> 630
+Line  2571 (label        ???) -> 545
+Line  2574 (label        ???) -> 540
+Line  2576 (label        ???) -> 540
+Line  2579 (label        ???) -> 545
+Line  2582 (label        ???) -> 545
+Line  2585 (label        ???) -> 545
+Line  2588 (label        ???) -> 545
+Line  2591 (label        ???) -> 545
+Line  2594 (label        ???) -> 545
+Line  2597 (label        ???) -> 545
+Line  2607 (label        ???) -> 545
+Line  2613 (label        ???) -> 545
+Line  2635 (label        ???) -> 550
+Line  2645 (label        ???) -> 530
+Line  2646 (label        ???) -> 560
+Line  2647 (label        ???) -> 640
+Line  2648 (label        ???) -> 540
+Line  2651 (label        ???) -> 555
+Line  2654 (label        ???) -> 550
+Line  2656 (label        ???) -> 550
+Line  2659 (label        ???) -> 555
+Line  2662 (label        ???) -> 555
+Line  2665 (label        ???) -> 555
+Line  2668 (label        ???) -> 555
+Line  2671 (label        ???) -> 555
+Line  2674 (label        ???) -> 555
+Line  2677 (label        ???) -> 555
+Line  2687 (label        ???) -> 555
+Line  2693 (label        ???) -> 555
+Line  2713 (label        ???) -> 560
+Line  2723 (label        ???) -> 550
+Line  2726 (label        ???) -> 565
+Line  2729 (label        ???) -> 560
+Line  2731 (label        ???) -> 560
+Line  2734 (label        ???) -> 565
+Line  2737 (label        ???) -> 565
+Line  2740 (label        ???) -> 565
+Line  2743 (label        ???) -> 565
+Line  2746 (label        ???) -> 565
+Line  2749 (label        ???) -> 565
+Line  2752 (label        ???) -> 565
+Line  2762 (label        ???) -> 565
+Line  2773 (label        ???) -> 565
+Line  2780 (label        ???) -> 565
+Line  2801 (label        ???) -> 570
+Line  2810 (label        ???) -> 520
+Line  2814 (label        ???) -> 530
+Line  2817 (label        ???) -> 580
+Line  2820 (label        ???) -> 575
+Line  2823 (label        ???) -> 570
+Line  2825 (label        ???) -> 570
+Line  2828 (label        ???) -> 575
+Line  2831 (label        ???) -> 575
+Line  2834 (label        ???) -> 575
+Line  2837 (label        ???) -> 575
+Line  2840 (label        ???) -> 575
+Line  2843 (label        ???) -> 575
+Line  2846 (label        ???) -> 575
+Line  2856 (label        ???) -> 575
+Line  2862 (label        ???) -> 575
+Line  2876 (label        ???) -> 570
+Line  2877 (label        ???) -> 590
+Line  2880 (label        ???) -> 585
+Line  2883 (label        ???) -> 580
+Line  2885 (label        ???) -> 580
+Line  2888 (label        ???) -> 585
+Line  2891 (label        ???) -> 585
+Line  2894 (label        ???) -> 585
+Line  2897 (label        ???) -> 585
+Line  2900 (label        ???) -> 585
+Line  2903 (label        ???) -> 585
+Line  2906 (label        ???) -> 585
+Line  2916 (label        ???) -> 585
+Line  2922 (label        ???) -> 585
+Line  2945 (label        ???) -> 610
+Line  2946 (label        ???) -> 600
+Line  2947 (label        ???) -> 580
+Line  2950 (label        ???) -> 595
+Line  2953 (label        ???) -> 590
+Line  2955 (label        ???) -> 590
+Line  2958 (label        ???) -> 595
+Line  2961 (label        ???) -> 595
+Line  2964 (label        ???) -> 595
+Line  2967 (label        ???) -> 595
+Line  2970 (label        ???) -> 595
+Line  2973 (label        ???) -> 595
+Line  2976 (label        ???) -> 595
+Line  2986 (label        ???) -> 595
+Line  2996 (label        ???) -> 595
+Line  3005 (label        ???) -> 595
+Line  3012 (label        ???) -> 595
+Line  3046 (label        ???) -> 590
+Line  3049 (label        ???) -> 605
+Line  3052 (label        ???) -> 600
+Line  3054 (label        ???) -> 600
+Line  3057 (label        ???) -> 605
+Line  3060 (label        ???) -> 605
+Line  3063 (label        ???) -> 605
+Line  3066 (label        ???) -> 605
+Line  3069 (label        ???) -> 605
+Line  3072 (label        ???) -> 605
+Line  3075 (label        ???) -> 605
+Line  3085 (label        ???) -> 605
+Line  3099 (label        ???) -> 605
+Line  3117 (label        ???) -> 600
+Line  3129 (label        ???) -> 605
+Line  3137 (label        ???) -> 605
+Line  3157 (label        ???) -> 590
+Line  3160 (label        ???) -> 615
+Line  3163 (label        ???) -> 610
+Line  3165 (label        ???) -> 610
+Line  3168 (label        ???) -> 615
+Line  3171 (label        ???) -> 615
+Line  3174 (label        ???) -> 615
+Line  3177 (label        ???) -> 615
+Line  3180 (label        ???) -> 615
+Line  3183 (label        ???) -> 615
+Line  3186 (label        ???) -> 615
+Line  3196 (label        ???) -> 615
+Line  3208 (label        ???) -> 615
+Line  3220 (label        ???) -> 615
+Line  3226 (label        ???) -> 615
+Line  3267 (label        ???) -> 520
+Line  3269 (label        ???) -> 650
+Line  3270 (label        ???) -> 650
+Line  3274 (label        ???) -> 625
+Line  3277 (label        ???) -> 620
+Line  3279 (label        ???) -> 620
+Line  3282 (label        ???) -> 625
+Line  3285 (label        ???) -> 625
+Line  3288 (label        ???) -> 625
+Line  3291 (label        ???) -> 625
+Line  3294 (label        ???) -> 625
+Line  3297 (label        ???) -> 625
+Line  3300 (label        ???) -> 625
+Line  3310 (label        ???) -> 625
+Line  3321 (label        ???) -> 625
+Line  3332 (label        ???) -> 625
+Line  3338 (label        ???) -> 625
+Line  3345 (label        ???) -> 625
+Line  3357 (label        ???) -> 540
+Line  3358 (label        ???) -> 640
+Line  3361 (label        ???) -> 635
+Line  3364 (label        ???) -> 630
+Line  3366 (label        ???) -> 630
+Line  3369 (label        ???) -> 635
+Line  3372 (label        ???) -> 635
+Line  3375 (label        ???) -> 635
+Line  3378 (label        ???) -> 635
+Line  3381 (label        ???) -> 635
+Line  3384 (label        ???) -> 635
+Line  3387 (label        ???) -> 635
+Line  3397 (label        ???) -> 635
+Line  3403 (label        ???) -> 635
+Line  3415 (label        ???) -> 550
+Line  3416 (label        ???) -> 630
+Line  3419 (label        ???) -> 645
+Line  3422 (label        ???) -> 640
+Line  3424 (label        ???) -> 640
+Line  3427 (label        ???) -> 645
+Line  3430 (label        ???) -> 645
+Line  3433 (label        ???) -> 645
+Line  3436 (label        ???) -> 645
+Line  3439 (label        ???) -> 645
+Line  3442 (label        ???) -> 645
+Line  3445 (label        ???) -> 645
+Line  3455 (label        ???) -> 645
+Line  3461 (label        ???) -> 645
+Line  3489 (label        ???) -> 655
+Line  3492 (label        ???) -> 620
+Line  3501 (label        ???) -> 655
+Line  3504 (label        ???) -> 650
+Line  3506 (label        ???) -> 650
+Line  3509 (label        ???) -> 655
+Line  3512 (label        ???) -> 655
+Line  3515 (label        ???) -> 655
+Line  3518 (label        ???) -> 655
+Line  3521 (label        ???) -> 655
+Line  3524 (label        ???) -> 655
+Line  3527 (label        ???) -> 655
+Line  3537 (label        ???) -> 655
+Line  3548 (label        ???) -> 655
+Line  3555 (label        ???) -> 655
+Line  3562 (label        ???) -> 655
+Line  3569 (label        ???) -> 660
+Line  3570 (label        ???) -> 670
+Line  3571 (label        ???) -> 990
+Line  3579 (label        ???) -> 670
+Line  3587 (label        ???) -> 990
+Line  3616 (label        ???) -> 670
+Line  3620 (label        ???) -> 665
+Line  3623 (label        ???) -> 660
+Line  3625 (label        ???) -> 660
+Line  3628 (label        ???) -> 665
+Line  3631 (label        ???) -> 665
+Line  3634 (label        ???) -> 665
+Line  3637 (label        ???) -> 665
+Line  3640 (label        ???) -> 665
+Line  3643 (label        ???) -> 665
+Line  3646 (label        ???) -> 665
+Line  3656 (label        ???) -> 665
+Line  3662 (label        ???) -> 665
+Line  3707 (label        ???) -> 750
+Line  3709 (label        ???) -> 660
+Line  3713 (label        ???) -> 675
+Line  3716 (label        ???) -> 670
+Line  3718 (label        ???) -> 670
+Line  3721 (label        ???) -> 675
+Line  3724 (label        ???) -> 675
+Line  3727 (label        ???) -> 675
+Line  3730 (label        ???) -> 675
+Line  3733 (label        ???) -> 675
+Line  3736 (label        ???) -> 675
+Line  3739 (label        ???) -> 675
+Line  3749 (label        ???) -> 675
+Line  3769 (label        ???) -> 675
+Line  3772 (label        ???) -> 675
+Line  3776 (label        ???) -> 677
+Line  3782 (label        ???) -> 675
+Line  3805 (label        ???) -> 750
+Line  3806 (label        ???) -> 690
+Line  3807 (label        ???) -> 760
+Line  3810 (label        ???) -> 685
+Line  3813 (label        ???) -> 680
+Line  3815 (label        ???) -> 680
+Line  3818 (label        ???) -> 685
+Line  3821 (label        ???) -> 685
+Line  3824 (label        ???) -> 685
+Line  3827 (label        ???) -> 685
+Line  3830 (label        ???) -> 685
+Line  3833 (label        ???) -> 685
+Line  3836 (label        ???) -> 685
+Line  3846 (label        ???) -> 685
+Line  3853 (label        ???) -> 685
+Line  3874 (label        ???) -> 680
+Line  3875 (label        ???) -> 700
+Line  3878 (label        ???) -> 695
+Line  3881 (label        ???) -> 690
+Line  3883 (label        ???) -> 690
+Line  3886 (label        ???) -> 695
+Line  3889 (label        ???) -> 695
+Line  3892 (label        ???) -> 695
+Line  3895 (label        ???) -> 695
+Line  3898 (label        ???) -> 695
+Line  3901 (label        ???) -> 695
+Line  3904 (label        ???) -> 695
+Line  3914 (label        ???) -> 695
+Line  3921 (label        ???) -> 695
+Line  3944 (label        ???) -> 690
+Line  3945 (label        ???) -> 710
+Line  3946 (label        ???) -> 770
+Line  3949 (label        ???) -> 705
+Line  3952 (label        ???) -> 700
+Line  3954 (label        ???) -> 700
+Line  3957 (label        ???) -> 705
+Line  3960 (label        ???) -> 705
+Line  3963 (label        ???) -> 705
+Line  3966 (label        ???) -> 705
+Line  3969 (label        ???) -> 705
+Line  3972 (label        ???) -> 705
+Line  3975 (label        ???) -> 705
+Line  3985 (label        ???) -> 705
+Line  3991 (label        ???) -> 705
+Line  4012 (label        ???) -> 720
+Line  4013 (label        ???) -> 700
+Line  4016 (label        ???) -> 715
+Line  4019 (label        ???) -> 710
+Line  4021 (label        ???) -> 710
+Line  4024 (label        ???) -> 715
+Line  4027 (label        ???) -> 715
+Line  4030 (label        ???) -> 715
+Line  4033 (label        ???) -> 715
+Line  4036 (label        ???) -> 715
+Line  4039 (label        ???) -> 715
+Line  4042 (label        ???) -> 715
+Line  4052 (label        ???) -> 715
+Line  4059 (label        ???) -> 715
+Line  4082 (label        ???) -> 730
+Line  4083 (label        ???) -> 710
+Line  4084 (label        ???) -> 780
+Line  4087 (label        ???) -> 725
+Line  4090 (label        ???) -> 720
+Line  4092 (label        ???) -> 720
+Line  4095 (label        ???) -> 725
+Line  4098 (label        ???) -> 725
+Line  4101 (label        ???) -> 725
+Line  4104 (label        ???) -> 725
+Line  4107 (label        ???) -> 725
+Line  4110 (label        ???) -> 725
+Line  4113 (label        ???) -> 725
+Line  4123 (label        ???) -> 725
+Line  4130 (label        ???) -> 725
+Line  4151 (label        ???) -> 740
+Line  4152 (label        ???) -> 720
+Line  4155 (label        ???) -> 735
+Line  4158 (label        ???) -> 730
+Line  4160 (label        ???) -> 730
+Line  4163 (label        ???) -> 735
+Line  4166 (label        ???) -> 735
+Line  4169 (label        ???) -> 735
+Line  4172 (label        ???) -> 735
+Line  4175 (label        ???) -> 735
+Line  4178 (label        ???) -> 735
+Line  4181 (label        ???) -> 735
+Line  4191 (label        ???) -> 735
+Line  4197 (label        ???) -> 735
+Line  4220 (label        ???) -> 750
+Line  4221 (label        ???) -> 730
+Line  4222 (label        ???) -> 790
+Line  4225 (label        ???) -> 745
+Line  4228 (label        ???) -> 740
+Line  4230 (label        ???) -> 740
+Line  4233 (label        ???) -> 745
+Line  4236 (label        ???) -> 745
+Line  4239 (label        ???) -> 745
+Line  4242 (label        ???) -> 745
+Line  4245 (label        ???) -> 745
+Line  4248 (label        ???) -> 745
+Line  4251 (label        ???) -> 745
+Line  4261 (label        ???) -> 745
+Line  4268 (label        ???) -> 745
+Line  4329 (label        ???) -> 670
+Line  4330 (label        ???) -> 740
+Line  4331 (label        ???) -> 680
+Line  4337 (label        ???) -> 755
+Line  4339 (label        ???) -> 800
+Line  4343 (label        ???) -> 755
+Line  4346 (label        ???) -> 750
+Line  4348 (label        ???) -> 750
+Line  4351 (label        ???) -> 755
+Line  4354 (label        ???) -> 755
+Line  4357 (label        ???) -> 755
+Line  4360 (label        ???) -> 755
+Line  4363 (label        ???) -> 755
+Line  4366 (label        ???) -> 755
+Line  4369 (label        ???) -> 755
+Line  4379 (label        ???) -> 755
+Line  4391 (label        ???) -> 755
+Line  4397 (label        ???) -> 755
+Line  4419 (label        ???) -> 680
+Line  4422 (label        ???) -> 765
+Line  4425 (label        ???) -> 760
+Line  4427 (label        ???) -> 760
+Line  4430 (label        ???) -> 765
+Line  4433 (label        ???) -> 765
+Line  4436 (label        ???) -> 765
+Line  4439 (label        ???) -> 765
+Line  4442 (label        ???) -> 765
+Line  4445 (label        ???) -> 765
+Line  4448 (label        ???) -> 765
+Line  4458 (label        ???) -> 765
+Line  4465 (label        ???) -> 765
+Line  4488 (label        ???) -> 700
+Line  4491 (label        ???) -> 775
+Line  4494 (label        ???) -> 770
+Line  4496 (label        ???) -> 770
+Line  4499 (label        ???) -> 775
+Line  4502 (label        ???) -> 775
+Line  4505 (label        ???) -> 775
+Line  4508 (label        ???) -> 775
+Line  4511 (label        ???) -> 775
+Line  4514 (label        ???) -> 775
+Line  4517 (label        ???) -> 775
+Line  4527 (label        ???) -> 775
+Line  4534 (label        ???) -> 775
+Line  4557 (label        ???) -> 720
+Line  4560 (label        ???) -> 785
+Line  4563 (label        ???) -> 780
+Line  4565 (label        ???) -> 780
+Line  4568 (label        ???) -> 785
+Line  4571 (label        ???) -> 785
+Line  4574 (label        ???) -> 785
+Line  4577 (label        ???) -> 785
+Line  4580 (label        ???) -> 785
+Line  4583 (label        ???) -> 785
+Line  4586 (label        ???) -> 785
+Line  4596 (label        ???) -> 785
+Line  4603 (label        ???) -> 785
+Line  4626 (label        ???) -> 740
+Line  4629 (label        ???) -> 795
+Line  4632 (label        ???) -> 790
+Line  4634 (label        ???) -> 790
+Line  4637 (label        ???) -> 795
+Line  4640 (label        ???) -> 795
+Line  4643 (label        ???) -> 795
+Line  4646 (label        ???) -> 795
+Line  4649 (label        ???) -> 795
+Line  4652 (label        ???) -> 795
+Line  4655 (label        ???) -> 795
+Line  4665 (label        ???) -> 795
+Line  4672 (label        ???) -> 795
+Line  4685 (label        ???) -> 750
+Line  4688 (label        ???) -> 810
+Line  4692 (label        ???) -> 805
+Line  4695 (label        ???) -> 800
+Line  4697 (label        ???) -> 800
+Line  4700 (label        ???) -> 805
+Line  4703 (label        ???) -> 805
+Line  4706 (label        ???) -> 805
+Line  4709 (label        ???) -> 805
+Line  4712 (label        ???) -> 805
+Line  4715 (label        ???) -> 805
+Line  4718 (label        ???) -> 805
+Line  4728 (label        ???) -> 805
+Line  4735 (label        ???) -> 805
+Line  4767 (label        ???) -> 800
+Line  4771 (label        ???) -> 815
+Line  4775 (label        ???) -> 813
+Line  4778 (label        ???) -> 810
+Line  4780 (label        ???) -> 810
+Line  4783 (label        ???) -> 813
+Line  4786 (label        ???) -> 813
+Line  4789 (label        ???) -> 813
+Line  4792 (label        ???) -> 813
+Line  4795 (label        ???) -> 813
+Line  4798 (label        ???) -> 813
+Line  4801 (label        ???) -> 815
+Line  4811 (label        ???) -> 813
+Line  4823 (label        ???) -> 813
+Line  4829 (label        ???) -> 813
+Line  4844 (label        ???) -> 815
+Line  4852 (label        ???) -> 820
+Line  4853 (label        ???) -> 810
+Line  4862 (label        ???) -> 817
+Line  4864 (label        ???) -> 817
+Line  4868 (label        ???) -> 818
+Line  4874 (label        ???) -> 817
+Line  4878 (label        ???) -> 817
+Line  4881 (label        ???) -> 815
+Line  4883 (label        ???) -> 815
+Line  4886 (label        ???) -> 817
+Line  4889 (label        ???) -> 817
+Line  4892 (label        ???) -> 817
+Line  4895 (label        ???) -> 817
+Line  4898 (label        ???) -> 817
+Line  4901 (label        ???) -> 817
+Line  4904 (label        ???) -> 817
+Line  4914 (label        ???) -> 817
+Line  4921 (label        ???) -> 817
+Line  4935 (label        ???) -> 820
+Line  4943 (label        ???) -> 830
+Line  4944 (label        ???) -> 815
+Line  4947 (label        ???) -> 820
+Line  4950 (label        ???) -> 820
+Line  4952 (label        ???) -> 820
+Line  4955 (label        ???) -> 825
+Line  4958 (label        ???) -> 825
+Line  4961 (label        ???) -> 825
+Line  4964 (label        ???) -> 825
+Line  4967 (label        ???) -> 825
+Line  4970 (label        ???) -> 825
+Line  4973 (label        ???) -> 825
+Line  4983 (label        ???) -> 825
+Line  4990 (label        ???) -> 825
+Line  5004 (label        ???) -> 830
+Line  5013 (label        ???) -> 850
+Line  5014 (label        ???) -> 840
+Line  5015 (label        ???) -> 820
+Line  5018 (label        ???) -> 835
+Line  5021 (label        ???) -> 830
+Line  5023 (label        ???) -> 830
+Line  5026 (label        ???) -> 835
+Line  5029 (label        ???) -> 835
+Line  5032 (label        ???) -> 835
+Line  5035 (label        ???) -> 835
+Line  5038 (label        ???) -> 835
+Line  5041 (label        ???) -> 835
+Line  5044 (label        ???) -> 835
+Line  5054 (label        ???) -> 835
+Line  5060 (label        ???) -> 835
+Line  5075 (label        ???) -> 840
+Line  5087 (label        ???) -> 870
+Line  5088 (label        ???) -> 880
+Line  5089 (label        ???) -> 850
+Line  5090 (label        ???) -> 830
+Line  5091 (label        ???) -> 970
+Line  5092 (label        ???) -> 950
+Line  5095 (label        ???) -> 845
+Line  5098 (label        ???) -> 840
+Line  5100 (label        ???) -> 840
+Line  5103 (label        ???) -> 845
+Line  5106 (label        ???) -> 845
+Line  5109 (label        ???) -> 845
+Line  5112 (label        ???) -> 845
+Line  5115 (label        ???) -> 845
+Line  5118 (label        ???) -> 845
+Line  5121 (label        ???) -> 845
+Line  5131 (label        ???) -> 845
+Line  5138 (label        ???) -> 845
+Line  5153 (label        ???) -> 850
+Line  5165 (label        ???) -> 860
+Line  5166 (label        ???) -> 890
+Line  5167 (label        ???) -> 980
+Line  5168 (label        ???) -> 830
+Line  5169 (label        ???) -> 840
+Line  5170 (label        ???) -> 880
+Line  5173 (label        ???) -> 855
+Line  5176 (label        ???) -> 850
+Line  5178 (label        ???) -> 850
+Line  5181 (label        ???) -> 855
+Line  5184 (label        ???) -> 855
+Line  5187 (label        ???) -> 855
+Line  5190 (label        ???) -> 855
+Line  5193 (label        ???) -> 855
+Line  5196 (label        ???) -> 855
+Line  5199 (label        ???) -> 855
+Line  5209 (label        ???) -> 855
+Line  5216 (label        ???) -> 855
+Line  5231 (label        ???) -> 860
+Line  5243 (label        ???) -> 920
+Line  5244 (label        ???) -> 910
+Line  5245 (label        ???) -> 890
+Line  5246 (label        ???) -> 850
+Line  5247 (label        ???) -> 880
+Line  5248 (label        ???) -> 870
+Line  5251 (label        ???) -> 865
+Line  5254 (label        ???) -> 860
+Line  5256 (label        ???) -> 860
+Line  5259 (label        ???) -> 865
+Line  5262 (label        ???) -> 865
+Line  5265 (label        ???) -> 865
+Line  5268 (label        ???) -> 865
+Line  5271 (label        ???) -> 865
+Line  5274 (label        ???) -> 865
+Line  5277 (label        ???) -> 865
+Line  5287 (label        ???) -> 865
+Line  5294 (label        ???) -> 865
+Line  5309 (label        ???) -> 870
+Line  5321 (label        ???) -> 920
+Line  5322 (label        ???) -> 860
+Line  5323 (label        ???) -> 880
+Line  5324 (label        ???) -> 840
+Line  5325 (label        ???) -> 950
+Line  5326 (label        ???) -> 940
+Line  5329 (label        ???) -> 875
+Line  5332 (label        ???) -> 870
+Line  5334 (label        ???) -> 870
+Line  5337 (label        ???) -> 875
+Line  5340 (label        ???) -> 875
+Line  5343 (label        ???) -> 875
+Line  5346 (label        ???) -> 875
+Line  5349 (label        ???) -> 875
+Line  5352 (label        ???) -> 875
+Line  5355 (label        ???) -> 875
+Line  5365 (label        ???) -> 875
+Line  5372 (label        ???) -> 875
+Line  5385 (label        ???) -> 880
+Line  5398 (label        ???) -> 990
+Line  5407 (label        ???) -> 860
+Line  5408 (label        ???) -> 850
+Line  5409 (label        ???) -> 840
+Line  5410 (label        ???) -> 870
+Line  5414 (label        ???) -> 885
+Line  5419 (label        ???) -> 885
+Line  5423 (label        ???) -> 885
+Line  5426 (label        ???) -> 880
+Line  5428 (label        ???) -> 880
+Line  5431 (label        ???) -> 885
+Line  5434 (label        ???) -> 885
+Line  5437 (label        ???) -> 885
+Line  5440 (label        ???) -> 885
+Line  5443 (label        ???) -> 885
+Line  5446 (label        ???) -> 885
+Line  5449 (label        ???) -> 885
+Line  5459 (label        ???) -> 885
+Line  5466 (label        ???) -> 885
+Line  5481 (label        ???) -> 890
+Line  5490 (label        ???) -> 860
+Line  5491 (label        ???) -> 850
+Line  5492 (label        ???) -> 900
+Line  5495 (label        ???) -> 895
+Line  5498 (label        ???) -> 890
+Line  5500 (label        ???) -> 890
+Line  5503 (label        ???) -> 895
+Line  5506 (label        ???) -> 895
+Line  5509 (label        ???) -> 895
+Line  5512 (label        ???) -> 895
+Line  5515 (label        ???) -> 895
+Line  5518 (label        ???) -> 895
+Line  5521 (label        ???) -> 895
+Line  5531 (label        ???) -> 895
+Line  5538 (label        ???) -> 895
+Line  5552 (label        ???) -> 900
+Line  5559 (label        ???) -> 890
+Line  5569 (label        ???) -> 905
+Line  5571 (label        ???) -> 905
+Line  5575 (label        ???) -> 907
+Line  5581 (label        ???) -> 905
+Line  5585 (label        ???) -> 905
+Line  5588 (label        ???) -> 900
+Line  5590 (label        ???) -> 900
+Line  5593 (label        ???) -> 905
+Line  5596 (label        ???) -> 905
+Line  5599 (label        ???) -> 905
+Line  5602 (label        ???) -> 905
+Line  5605 (label        ???) -> 905
+Line  5608 (label        ???) -> 905
+Line  5611 (label        ???) -> 905
+Line  5621 (label        ???) -> 905
+Line  5628 (label        ???) -> 905
+Line  5642 (label        ???) -> 910
+Line  5649 (label        ???) -> 860
+Line  5659 (label        ???) -> 915
+Line  5661 (label        ???) -> 915
+Line  5665 (label        ???) -> 917
+Line  5672 (label        ???) -> 915
+Line  5676 (label        ???) -> 915
+Line  5679 (label        ???) -> 910
+Line  5681 (label        ???) -> 910
+Line  5684 (label        ???) -> 915
+Line  5687 (label        ???) -> 915
+Line  5690 (label        ???) -> 915
+Line  5693 (label        ???) -> 915
+Line  5696 (label        ???) -> 915
+Line  5699 (label        ???) -> 915
+Line  5702 (label        ???) -> 915
+Line  5712 (label        ???) -> 915
+Line  5718 (label        ???) -> 915
+Line  5733 (label        ???) -> 920
+Line  5742 (label        ???) -> 930
+Line  5743 (label        ???) -> 860
+Line  5744 (label        ???) -> 870
+Line  5747 (label        ???) -> 925
+Line  5750 (label        ???) -> 920
+Line  5752 (label        ???) -> 920
+Line  5755 (label        ???) -> 925
+Line  5758 (label        ???) -> 925
+Line  5761 (label        ???) -> 925
+Line  5764 (label        ???) -> 925
+Line  5767 (label        ???) -> 925
+Line  5770 (label        ???) -> 925
+Line  5773 (label        ???) -> 925
+Line  5783 (label        ???) -> 925
+Line  5790 (label        ???) -> 925
+Line  5804 (label        ???) -> 930
+Line  5811 (label        ???) -> 920
+Line  5821 (label        ???) -> 935
+Line  5823 (label        ???) -> 935
+Line  5827 (label        ???) -> 937
+Line  5834 (label        ???) -> 935
+Line  5838 (label        ???) -> 935
+Line  5841 (label        ???) -> 930
+Line  5843 (label        ???) -> 930
+Line  5846 (label        ???) -> 935
+Line  5849 (label        ???) -> 935
+Line  5852 (label        ???) -> 935
+Line  5855 (label        ???) -> 935
+Line  5858 (label        ???) -> 935
+Line  5861 (label        ???) -> 935
+Line  5864 (label        ???) -> 935
+Line  5874 (label        ???) -> 935
+Line  5880 (label        ???) -> 935
+Line  5894 (label        ???) -> 940
+Line  5901 (label        ???) -> 870
+Line  5911 (label        ???) -> 945
+Line  5913 (label        ???) -> 945
+Line  5917 (label        ???) -> 947
+Line  5924 (label        ???) -> 945
+Line  5928 (label        ???) -> 945
+Line  5931 (label        ???) -> 940
+Line  5933 (label        ???) -> 940
+Line  5936 (label        ???) -> 945
+Line  5939 (label        ???) -> 945
+Line  5942 (label        ???) -> 945
+Line  5945 (label        ???) -> 945
+Line  5948 (label        ???) -> 945
+Line  5951 (label        ???) -> 945
+Line  5954 (label        ???) -> 945
+Line  5964 (label        ???) -> 945
+Line  5970 (label        ???) -> 945
+Line  5985 (label        ???) -> 950
+Line  5994 (label        ???) -> 870
+Line  5995 (label        ???) -> 840
+Line  5996 (label        ???) -> 960
+Line  5999 (label        ???) -> 955
+Line  6002 (label        ???) -> 950
+Line  6004 (label        ???) -> 950
+Line  6007 (label        ???) -> 955
+Line  6010 (label        ???) -> 955
+Line  6013 (label        ???) -> 955
+Line  6016 (label        ???) -> 955
+Line  6019 (label        ???) -> 955
+Line  6022 (label        ???) -> 955
+Line  6025 (label        ???) -> 955
+Line  6035 (label        ???) -> 955
+Line  6041 (label        ???) -> 955
+Line  6055 (label        ???) -> 960
+Line  6062 (label        ???) -> 950
+Line  6072 (label        ???) -> 965
+Line  6074 (label        ???) -> 965
+Line  6078 (label        ???) -> 967
+Line  6085 (label        ???) -> 965
+Line  6089 (label        ???) -> 965
+Line  6092 (label        ???) -> 960
+Line  6094 (label        ???) -> 960
+Line  6097 (label        ???) -> 965
+Line  6100 (label        ???) -> 965
+Line  6103 (label        ???) -> 965
+Line  6106 (label        ???) -> 965
+Line  6109 (label        ???) -> 965
+Line  6112 (label        ???) -> 965
+Line  6115 (label        ???) -> 965
+Line  6125 (label        ???) -> 965
+Line  6131 (label        ???) -> 965
+Line  6145 (label        ???) -> 970
+Line  6152 (label        ???) -> 840
+Line  6162 (label        ???) -> 975
+Line  6164 (label        ???) -> 975
+Line  6168 (label        ???) -> 977
+Line  6175 (label        ???) -> 975
+Line  6179 (label        ???) -> 975
+Line  6182 (label        ???) -> 970
+Line  6184 (label        ???) -> 970
+Line  6187 (label        ???) -> 975
+Line  6190 (label        ???) -> 975
+Line  6193 (label        ???) -> 975
+Line  6196 (label        ???) -> 975
+Line  6199 (label        ???) -> 975
+Line  6202 (label        ???) -> 975
+Line  6205 (label        ???) -> 975
+Line  6215 (label        ???) -> 975
+Line  6222 (label        ???) -> 975
+Line  6236 (label        ???) -> 980
+Line  6243 (label        ???) -> 850
+Line  6253 (label        ???) -> 985
+Line  6255 (label        ???) -> 985
+Line  6259 (label        ???) -> 987
+Line  6266 (label        ???) -> 985
+Line  6270 (label        ???) -> 985
+Line  6273 (label        ???) -> 980
+Line  6275 (label        ???) -> 980
+Line  6278 (label        ???) -> 985
+Line  6281 (label        ???) -> 985
+Line  6284 (label        ???) -> 985
+Line  6287 (label        ???) -> 985
+Line  6290 (label        ???) -> 985
+Line  6293 (label        ???) -> 985
+Line  6296 (label        ???) -> 985
+Line  6306 (label        ???) -> 985
+Line  6313 (label        ???) -> 985
+Line  6366 (label        ???) -> 995
+Line  6379 (label        ???) -> 995
+Line  6394 (label        ???) -> 995
+Line  6426 (label        ???) -> 995
+Line  6429 (label        ???) -> 995
+Line  6434 (label        ???) -> 996
+Line  6438 (label        ???) -> 995
+Line  6441 (label        ???) -> 990
+Line  6443 (label        ???) -> 990
+Line  6446 (label        ???) -> 995
+Line  6449 (label        ???) -> 995
+Line  6452 (label        ???) -> 995
+Line  6455 (label        ???) -> 995
+Line  6458 (label        ???) -> 995
+Line  6461 (label        ???) -> 995
+Line  6464 (label        ???) -> 935
+Line  6474 (label        ???) -> 995
+Line  6481 (label        ???) -> 995
+Line  6489 (label        ???) -> 11
+Line  6492 (label        ???) -> 12
+Line  6495 (label        ???) -> 12
+Line  6498 (label        ???) -> 12
+Line  6501 (label        ???) -> 12
+Line  6504 (label        ???) -> 12
+Line  6507 (label        ???) -> 12
+Line  6510 (label        ???) -> 13
+Line  6513 (label        ???) -> 14
+Line  6516 (label        ???) -> 16
+Line  6519 (label        ???) -> 2500
+Line  6532 (label        ???) -> 2500
+Line  6542 (label        ???) -> 2500
+Line  6546 (label        ???) -> 2500
+Line  6550 (label        ???) -> 2500
+Line  6557 (label        ???) -> 2500
+Line  6561 (label        ???) -> 2500
+Line  6564 (label        ???) -> 15
+Line  6574 (label        ???) -> 2500
+Line  6692 (label        ???) -> 1
+Line  6697 (label        ???) -> 2000
+Line  6698 (label        ???) -> 1
+Line  6702 (label        ???) -> 2000
+Line  6703 (label        ???) -> 1
+Line  6709 (label        ???) -> 1
+Line  6720 (label        ???) -> 20
+Line  6728 (label        ???) -> 20
+Line  6736 (label        ???) -> 20
+Line  6742 (label        ???) -> 20
+Line  6751 (label        ???) -> 1
+Line  6756 (label        ???) -> 1
+Line  6761 (label        ???) -> 1
+Line  6767 (label        ???) -> 20
+Line  6771 (label        ???) -> 20
+Line  6776 (label        ???) -> 2000
+Line  6786 (label        ???) -> 2000
+Line  6789 (label        ???) -> 20
+Line  6801 (label        ???) -> 2000
+Line  6805 (label        ???) -> 20
+Line  6814 (label        ???) -> 1
+Line  6819 (label        ???) -> 1
+Line  6822 (label        ???) -> 1
+Line  6830 (label        ???) -> 1
+Line  6835 (label        ???) -> 2000
+Line  6842 (label        ???) -> 2000
+Line  6844 (label        ???) -> 1
+Line  6850 (label        ???) -> 1
+Line  6863 (label        ???) -> 20
+Line  6869 (label        ???) -> 20
+Line  6873 (label        ???) -> 20
+Line  6883 (label        ???) -> 20
+Line  6899 (label        ???) -> 2000
+Line  6902 (label        ???) -> 20
+Line  6917 (label        ???) -> 2000
+Line  6919 (label        ???) -> 20
+Line  6929 (label        ???) -> 20
+Line  6935 (label        ???) -> 20
+Line  6939 (label        ???) -> 20
+Line  6948 (label        ???) -> 20
+Line  6953 (label        ???) -> 2000
+Line  6954 (label        ???) -> 20
+Line  6959 (label        ???) -> 2000
+Line  6960 (label        ???) -> 20
+Line  6966 (label        ???) -> 20
+Line  6976 (label        ???) -> 20
+Line  6984 (label        ???) -> 20
+Line  6992 (label        ???) -> 20
+Line  6998 (label        ???) -> 20
+Line  7008 (label        ???) -> 20
+Line  7013 (label        ???) -> 2000
+Line  7020 (label        ???) -> 2000
+Line  7022 (label        ???) -> 20
+Line  7028 (label        ???) -> 20
+Line  7032 (label        ???) -> 20
+Line  7041 (label        ???) -> 2000
+Line  7045 (label        ???) -> 20
+Line  7053 (label        ???) -> 2000
+Line  7055 (label        ???) -> 20
+Line  7066 (label        ???) -> 2000
+Line  7070 (label        ???) -> 20
+Line  7078 (label        ???) -> 2000
+Line  7080 (label        ???) -> 20
+Line  7085 (label        ???) -> 70
+Line  7088 (label        ???) -> 80
+Line  7091 (label        ???) -> 90
+Line  7094 (label        ???) -> 100
+Line  7098 (label        ???) -> 110
+Line  7105 (label        ???) -> 2000
+Line  7107 (label        ???) -> 20
+Line  7111 (label        ???) -> 20
+Line  7116 (label        ???) -> 2001
+Line  7123 (label        ???) -> 20
+Line  7128 (label        ???) -> 20
+Line  7131 (label        ???) -> 20
+Line  7135 (label        ???) -> 20
+Line  7142 (label        ???) -> 20
+Line  7154 (label        ???) -> 2000
+Line  7158 (label        ???) -> 20
+Line  7169 (label        ???) -> 2000
+Line  7172 (label        ???) -> 20
+Line  7181 (label        ???) -> 20
+Line  7184 (label        ???) -> 20
+Line  7190 (label        ???) -> 2000
+Line  7213 (label        ???) -> 2001
+Line  7229 (label        ???) -> 2001
+Line  7245 (label        ???) -> 2001
+Line  7261 (label        ???) -> 2001
+Line  7277 (label        ???) -> 2001
+Line  7395 (label        ???) -> 1000
+Line  7400 (label        ???) -> 102000
+Line  7401 (label        ???) -> 1000
+Line  7405 (label        ???) -> 102000
+Line  7406 (label        ???) -> 1000
+Line  7412 (label        ???) -> 1000
+Line  7423 (label        ???) -> 1020
+Line  7431 (label        ???) -> 1020
+Line  7439 (label        ???) -> 1020
+Line  7445 (label        ???) -> 1020
+Line  7454 (label        ???) -> 1000
+Line  7459 (label        ???) -> 1000
+Line  7464 (label        ???) -> 1000
+Line  7470 (label        ???) -> 1020
+Line  7474 (label        ???) -> 1020
+Line  7479 (label        ???) -> 102000
+Line  7488 (label        ???) -> 1000
+Line  7494 (label        ???) -> 102000
+Line  7497 (label        ???) -> 1020
+Line  7509 (label        ???) -> 1000
+Line  7514 (label        ???) -> 102000
+Line  7518 (label        ???) -> 1020
+Line  7527 (label        ???) -> 1000
+Line  7532 (label        ???) -> 1000
+Line  7535 (label        ???) -> 1000
+Line  7543 (label        ???) -> 1000
+Line  7560 (label        ???) -> 102000
+Line  7563 (label        ???) -> 102000
+Line  7581 (label        ???) -> 102000
+Line  7584 (label        ???) -> 102000
+Line  7586 (label        ???) -> 1000
+Line  7604 (label        ???) -> 102000
+Line  7607 (label        ???) -> 102000
+Line  7609 (label        ???) -> 1020
+Line  7613 (label        ???) -> 1020
+Line  7617 (label        ???) -> 1000
+Line  7630 (label        ???) -> 1020
+Line  7636 (label        ???) -> 1020
+Line  7640 (label        ???) -> 1020
+Line  7650 (label        ???) -> 1020
+Line  7677 (label        ???) -> 102000
+Line  7681 (label        ???) -> 102000
+Line  7684 (label        ???) -> 102000
+Line  7710 (label        ???) -> 102000
+Line  7714 (label        ???) -> 102000
+Line  7716 (label        ???) -> 1020
+Line  7726 (label        ???) -> 1020
+Line  7732 (label        ???) -> 1020
+Line  7736 (label        ???) -> 1020
+Line  7745 (label        ???) -> 1020
+Line  7750 (label        ???) -> 102000
+Line  7751 (label        ???) -> 1020
+Line  7756 (label        ???) -> 102000
+Line  7757 (label        ???) -> 1020
+Line  7763 (label        ???) -> 1020
+Line  7773 (label        ???) -> 1020
+Line  7781 (label        ???) -> 1020
+Line  7789 (label        ???) -> 1020
+Line  7795 (label        ???) -> 1020
+Line  7805 (label        ???) -> 1020
+Line  7822 (label        ???) -> 102000
+Line  7825 (label        ???) -> 102000
+Line  7843 (label        ???) -> 102000
+Line  7846 (label        ???) -> 102000
+Line  7848 (label        ???) -> 1020
+Line  7854 (label        ???) -> 1020
+Line  7858 (label        ???) -> 1020
+Line  7865 (label        ???) -> 1020
+Line  7882 (label        ???) -> 102000
+Line  7886 (label        ???) -> 102000
+Line  7890 (label        ???) -> 1020
+Line  7896 (label        ???) -> 1020
+Line  7913 (label        ???) -> 102000
+Line  7917 (label        ???) -> 102000
+Line  7919 (label        ???) -> 1020
+Line  7928 (label        ???) -> 1020
+Line  7945 (label        ???) -> 102000
+Line  7949 (label        ???) -> 102000
+Line  7953 (label        ???) -> 1020
+Line  7959 (label        ???) -> 1020
+Line  7976 (label        ???) -> 102000
+Line  7980 (label        ???) -> 102000
+Line  7982 (label        ???) -> 1020
+Line  7987 (label        ???) -> 1070
+Line  7990 (label        ???) -> 1080
+Line  7993 (label        ???) -> 1090
+Line  7996 (label        ???) -> 10100
+Line  8000 (label        ???) -> 10110
+Line  8018 (label        ???) -> 102000
+Line  8021 (label        ???) -> 102000
+Line  8023 (label        ???) -> 1020
+Line  8027 (label        ???) -> 1020
+Line  8032 (label        ???) -> 102001
+Line  8039 (label        ???) -> 1020
+Line  8044 (label        ???) -> 1020
+Line  8047 (label        ???) -> 1020
+Line  8051 (label        ???) -> 1020
+Line  8058 (label        ???) -> 1020
+Line  8067 (label        ???) -> 1020
+Line  8075 (label        ???) -> 102000
+Line  8079 (label        ???) -> 1020
+Line  8089 (label        ???) -> 1020
+Line  8095 (label        ???) -> 102000
+Line  8098 (label        ???) -> 1020
+Line  8107 (label        ???) -> 1020
+Line  8110 (label        ???) -> 1020
+Line  8116 (label        ???) -> 1020
+Line  8121 (label        ???) -> 102000
+Line  8144 (label        ???) -> 102001
+Line  8160 (label        ???) -> 102001
+Line  8176 (label        ???) -> 102001
+Line  8192 (label        ???) -> 102001
+Line  8208 (label        ???) -> 102001
+Line  8227 (label        ???) -> 0
+Line  8232 (label        ???) -> 21
+Line  8234 (label        ???) -> 21
+Line  8238 (label        ???) -> 10
+Line  8251 (label        ???) -> 21.5
+Line  8258 (label        ???) -> 21.5
+Line  8265 (label        ???) -> 21.5
+Line  8272 (label        ???) -> 21.5
+Line  8279 (label        ???) -> 21.5
+Line  8283 (label        ???) -> 21
+Line  8297 (label        ???) -> 22
+Line  8307 (label        ???) -> 22
+Line  8318 (label        ???) -> 22
+Line  8324 (label        ???) -> 21.5
+Line  8369 (label        ???) -> 24
+Line  8370 (label        ???) -> 24
+Line  8371 (label        ???) -> 22
+Line  8372 (label        ???) -> 22
+Line  8374 (label        ???) -> 22
+Line  8380 (label        ???) -> 0
+Line  8381 (label        ???) -> 0
+Line  8382 (label        ???) -> 25
+Line  8383 (label        ???) -> 25
+Line  8387 (label        ???) -> 24
+Line  8395 (label        ???) -> 101010
+Line  8396 (label        ???) -> 101010
+Line  8397 (label        ???) -> 101010
+Line  8398 (label        ???) -> 101010
+Line  8399 (label        ???) -> 101010
+Line  8400 (label        ???) -> 101010
+Line  8401 (label        ???) -> 101010
+Line  8402 (label        ???) -> 101010
+Line  8403 (label        ???) -> 101010
+Line  8404 (label        ???) -> 101010
+Line  8405 (label        ???) -> 101010
+Line  8406 (label        ???) -> 101010
+Line  8407 (label        ???) -> 101010
+Line  8408 (label        ???) -> 101010
+Line  8409 (label        ???) -> 101010
+Line  8410 (label        ???) -> 101010
+Line  8411 (label        ???) -> 101010
+Line  8412 (label        ???) -> 101010
+Line  8413 (label        ???) -> 101010
+Line  8414 (label        ???) -> 101010
+Line  8415 (label        ???) -> 101010
+Line  8416 (label        ???) -> 101010
+Line  8417 (label        ???) -> 101010
+Line  8418 (label        ???) -> 101010
+Line  8419 (label        ???) -> 101010
+Line  8420 (label        ???) -> 101010
+Line  8422 (label        ???) -> 101010
+Line  8423 (label        ???) -> 101010
+Line  8424 (label        ???) -> 101010
+Line  8425 (label        ???) -> 101010
+Line  8426 (label        ???) -> 101010
+Line  8427 (label        ???) -> 101010
+Line  8428 (label        ???) -> 101010
+Line  8429 (label        ???) -> 101010
+Line  8430 (label        ???) -> 101010
+Line  8431 (label        ???) -> 101010
+Line  8432 (label        ???) -> 101010
+Line  8433 (label        ???) -> 101010
+Line  8434 (label        ???) -> 101010
+Line  8435 (label        ???) -> 101010
+Line  8436 (label        ???) -> 101010
+Line  8437 (label        ???) -> 101010
+Line  8438 (label        ???) -> 101010
+Line  8439 (label        ???) -> 101010
+Line  8440 (label        ???) -> 101010
+Line  8441 (label        ???) -> 101010
+Line  8442 (label        ???) -> 101010
+Line  8443 (label        ???) -> 101010
+Line  8444 (label        ???) -> 101010
+Line  8445 (label        ???) -> 101010
+Line  8446 (label        ???) -> 101010
+Line  8447 (label        ???) -> 101010
+Line  8449 (label        ???) -> 101010
+Line  8450 (label        ???) -> 101010
+Line  8451 (label        ???) -> 101010
+Line  8452 (label        ???) -> 101010
+Line  8453 (label        ???) -> 101010
+Line  8454 (label        ???) -> 101010
+Line  8455 (label        ???) -> 101010
+Line  8456 (label        ???) -> 101010
+Line  8457 (label        ???) -> 101010
+Line  8458 (label        ???) -> 101010
+Line  8459 (label        ???) -> 101010
+Line  8460 (label        ???) -> 101010
+Line  8461 (label        ???) -> 101010
+Line  8462 (label        ???) -> 101010
+Line  8463 (label        ???) -> 101010
+Line  8464 (label        ???) -> 101010
+Line  8465 (label        ???) -> 101010
+Line  8466 (label        ???) -> 101010
+Line  8467 (label        ???) -> 101010
+Line  8468 (label        ???) -> 101010
+Line  8469 (label        ???) -> 101010
+Line  8470 (label        ???) -> 101010
+Line  8471 (label        ???) -> 101010
+Line  8472 (label        ???) -> 101010
+Line  8473 (label        ???) -> 101010
+Line  8474 (label        ???) -> 101010
+Line  8768 (label        ???) -> 1007
+Line  9127 (label        ???) -> 27
+Line  9135 (label        ???) -> 27
+Line  9150 (label        ???) -> 27
+Line  9158 (label        ???) -> 27
+Line  9173 (label        ???) -> 27
+Line  9181 (label        ???) -> 27
+Line  9196 (label        ???) -> 27
+Line  9204 (label        ???) -> 27
+Line  9219 (label        ???) -> 27
+Line  9227 (label        ???) -> 27
+Line  9242 (label        ???) -> 27
+Line  9250 (label        ???) -> 27
+Line  9265 (label        ???) -> 27
+Line  9273 (label        ???) -> 27
+Line  9288 (label        ???) -> 27
+Line  9296 (label        ???) -> 27
+Line  9322 (label        ???) -> 1510
+Line  9330 (label        ???) -> 1510
+Line  9345 (label        ???) -> 1510
+Line  9353 (label        ???) -> 1510
+Line  9368 (label        ???) -> 1510
+Line  9376 (label        ???) -> 1510
+Line  9391 (label        ???) -> 1510
+Line  9399 (label        ???) -> 1510
+Line  9414 (label        ???) -> 1510
+Line  9422 (label        ???) -> 1510
+Line  9437 (label        ???) -> 1510
+Line  9445 (label        ???) -> 1510
+Line  9459 (label        ???) -> 1510
+Line  9467 (label        ???) -> 1510
+Line  9498 (label        ???) -> 400
+Line  9506 (label        ???) -> 400
+Line  9530 (label        ???) -> 400
+Line  9538 (label        ???) -> 400
+Line  9562 (label        ???) -> 400
+Line  9570 (label        ???) -> 400
+Line  9594 (label        ???) -> 400
+Line  9602 (label        ???) -> 400
+Line  9627 (label        ???) -> 400
+Line  9635 (label        ???) -> 400
+Line  9659 (label        ???) -> 400
+Line  9667 (label        ???) -> 400
+Line  9691 (label        ???) -> 400
+Line  9699 (label        ???) -> 400
+Line  9723 (label        ???) -> 400
+Line  9731 (label        ???) -> 400
+Line  9755 (label        ???) -> 400
+Line  9763 (label        ???) -> 400
+Line  9787 (label        ???) -> 400
+Line  9795 (label        ???) -> 400
+Line  9819 (label        ???) -> 400
+Line  9827 (label        ???) -> 400
+Line  9851 (label        ???) -> 400
+Line  9859 (label        ???) -> 400
+Line  9883 (label        ???) -> 400
+Line  9891 (label        ???) -> 400
+Line  9915 (label        ???) -> 400
+Line  9923 (label        ???) -> 400
+Line  9946 (label        ???) -> 400
+Line  9954 (label        ???) -> 400
+Line  9972 (label        ???) -> 0.9
+Line  9977 (label        ???) -> 0.9
+Line  9995 (label        ???) -> 410
+Line 10003 (label        ???) -> 410
+Line 10018 (label        ???) -> 410
+Line 10026 (label        ???) -> 410
+Line 10041 (label        ???) -> 410
+Line 10049 (label        ???) -> 410
+Line 10064 (label        ???) -> 410
+Line 10072 (label        ???) -> 410
+Line 10087 (label        ???) -> 410
+Line 10095 (label        ???) -> 410
+Line 10110 (label        ???) -> 410
+Line 10118 (label        ???) -> 410
+Line 10133 (label        ???) -> 410
+Line 10141 (label        ???) -> 410
+Line 10156 (label        ???) -> 410
+Line 10164 (label        ???) -> 410
+Line 10179 (label        ???) -> 410
+Line 10187 (label        ???) -> 410
+Line 10192 (label        ???) -> 410
+Line 10477 (label        ???) -> 1013
+Line 10482 (label        ???) -> 1013
+Line 10485 (label        ???) -> 1011
+Line 10502 (label        ???) -> 1013
+Line 10508 (label        ???) -> 1013
+Line 10510 (label        ???) -> 1011
+Line 10550 (label        ???) -> 1013
+Line 10554 (label        ???) -> 1013
+Line 10579 (label        ???) -> 1013
+Line 10583 (label        ???) -> 1013
+Line 10589 (label        ???) -> 1011
+Line 10610 (label        ???) -> 1013
+Line 10614 (label        ???) -> 1013
+Line 10634 (label        ???) -> 1013
+Line 10649 (label        ???) -> 1013
+Line 10653 (label        ???) -> 1013
+Line 10659 (label        ???) -> 1011
+Line 10683 (label        ???) -> 1013
+Line 10687 (label        ???) -> 1013
+Line 10702 (label        ???) -> 1013
+Line 10705 (label        ???) -> 1013
+Line 10727 (label        ???) -> 1013
+Line 10732 (label        ???) -> 1013
+Line 10746 (label        ???) -> 1013
+Line 10749 (label        ???) -> 1013
+Line 10755 (label        ???) -> 1011
+Line 10776 (label        ???) -> 1013
+Line 10780 (label        ???) -> 1013
+Line 10800 (label        ???) -> 1013
+Line 10804 (label        ???) -> 1013
+Line 10809 (label        ???) -> 1011
+Line 10842 (label        ???) -> 1011
+Line 10856 (label        ???) -> 1013
+Line 10861 (label        ???) -> 1012
+Line 11028 (label        ???) -> 5000
+Line 11031 (label        ???) -> 5000
+Line 11039 (label        ???) -> 5000
+Line 11042 (label        ???) -> 5000
+Line 11050 (label        ???) -> 5000
+Line 11053 (label        ???) -> 5000
+Line 11061 (label        ???) -> 5000
+Line 11064 (label        ???) -> 5000
+Line 11072 (label        ???) -> 5000
+Line 11075 (label        ???) -> 5000
+Line 11083 (label        ???) -> 5000
+Line 11086 (label        ???) -> 5000
+Line 11094 (label        ???) -> 5000
+Line 11097 (label        ???) -> 5000
+Line 11108 (label        ???) -> 5000
+Line 11111 (label        ???) -> 5000
+Line 11206 (label        ???) -> 100000
+Line 11211 (label        ???) -> 100000
+Line 11215 (label        ???) -> 100000
+Line 11220 (label        ???) -> 100000
+Line 11225 (label        ???) -> 100000
+Line 11230 (label        ???) -> 100000
+Line 11236 (label        ???) -> 99998
+Line 11245 (label        ???) -> 100000
+Line 11250 (label        ???) -> 100000
+Line 11254 (label        ???) -> 100000
+Line 11259 (label        ???) -> 100000
+Line 11264 (label        ???) -> 100000
+Line 11269 (label        ???) -> 100000
+Line 11275 (label        ???) -> 99999
+Line 11320 (label        ???) -> 100002
+Line 11400 (label        ???) -> 3000
+Line 11404 (label        ???) -> 3000
+Line 11408 (label        ???) -> 3000
+Line 11410 (label        ???) -> 3001
+Line 11411 (label        ???) -> 3002
+Line 11412 (label        ???) -> 3003
+Line 11413 (label        ???) -> 3004
+Line 11414 (label        ???) -> 3005
+Line 11415 (label        ???) -> 3006
+Line 11416 (label        ???) -> 3007
+Line 11417 (label        ???) -> 3008
+Line 11418 (label        ???) -> 3009
+Line 11419 (label        ???) -> 3010
+Line 11420 (label        ???) -> 3011
+Line 11421 (label        ???) -> 3012
+Line 11422 (label        ???) -> 3013
+Line 11423 (label        ???) -> 3014
+Line 11424 (label        ???) -> 3015
+Line 11425 (label        ???) -> 3016
+Line 11426 (label        ???) -> 3017
+Line 11427 (label        ???) -> 3018
+Line 11428 (label        ???) -> 3019
+Line 11429 (label        ???) -> 3020
+Line 11430 (label        ???) -> 3021
+Line 11431 (label        ???) -> 3022
+Line 11432 (label        ???) -> 3023
+Line 11433 (label        ???) -> 3024
+Line 11434 (label        ???) -> 3025
+Line 11435 (label        ???) -> 3026
+Line 11436 (label        ???) -> 3027
+Line 11437 (label        ???) -> 3028
+Line 11438 (label        ???) -> 3029
+Line 11439 (label        ???) -> 3030
+Line 11440 (label        ???) -> 3031
+Line 11441 (label        ???) -> 3032
+Line 11442 (label        ???) -> 3033
+Line 11443 (label        ???) -> 3034
+Line 11444 (label        ???) -> 3035
+Line 11445 (label        ???) -> 3036
+Line 11446 (label        ???) -> 3037
+Line 11447 (label        ???) -> 3038
+Line 11448 (label        ???) -> 3039
+Line 11449 (label        ???) -> 3040
+Line 11450 (label        ???) -> 3041
+Line 11451 (label        ???) -> 3042
+Line 11452 (label        ???) -> 3043
+Line 11453 (label        ???) -> 3044
+Line 11454 (label        ???) -> 3045
+Line 11455 (label        ???) -> 3046
+Line 11456 (label        ???) -> 3047
+Line 11457 (label        ???) -> 3048
+Line 11458 (label        ???) -> 3049
+Line 11459 (label        ???) -> 3050
+Line 11460 (label        ???) -> 3051
+Line 11461 (label        ???) -> 3052
+Line 11462 (label        ???) -> 3053
+Line 11463 (label        ???) -> 3054
+Line 11464 (label        ???) -> 3055
+Line 11465 (label        ???) -> 3056
+Line 11466 (label        ???) -> 3057
+Line 11467 (label        ???) -> 3058
+Line 11468 (label        ???) -> 3059
+Line 11469 (label        ???) -> 3060
+Line 11470 (label        ???) -> 3061
+Line 11471 (label        ???) -> 3062
+Line 11472 (label        ???) -> 3063
+Line 11473 (label        ???) -> 3064
+Line 11474 (label        ???) -> 3065
+Line 11475 (label        ???) -> 3066
+Line 11476 (label        ???) -> 3067
+Line 11477 (label        ???) -> 3068
+Line 11478 (label        ???) -> 3069
+Line 11479 (label        ???) -> 3070
+Line 11480 (label        ???) -> 3071
+Line 11481 (label        ???) -> 3072
+Line 11482 (label        ???) -> 3073
+Line 11483 (label        ???) -> 3074
+Line 11484 (label        ???) -> 3075
+Line 11485 (label        ???) -> 3076
+Line 11486 (label        ???) -> 3077
+Line 11487 (label        ???) -> 3078
+Line 11488 (label        ???) -> 3079
+Line 11489 (label        ???) -> 3080
+Line 11490 (label        ???) -> 3081
+Line 11491 (label        ???) -> 3082
+Line 11492 (label        ???) -> 3083
+Line 11493 (label        ???) -> 3084
+Line 11494 (label        ???) -> 3085
+Line 11495 (label        ???) -> 3086
+Line 11496 (label        ???) -> 3087
+Line 11497 (label        ???) -> 3088
+Line 11498 (label        ???) -> 3089
+Line 11499 (label        ???) -> 3090
+Line 11500 (label        ???) -> 3091
+Line 11501 (label        ???) -> 3092
+Line 11502 (label        ???) -> 3093
+Line 11503 (label        ???) -> 3094
+Line 11504 (label        ???) -> 3095
+Line 11505 (label        ???) -> 3096
+Line 11506 (label        ???) -> 3097
+Line 11507 (label        ???) -> 3098
+Line 11508 (label        ???) -> 3099
+Line 11509 (label        ???) -> 3100
+Line 11511 (label        ???) -> 3000
+Line 11516 (label        ???) -> 3000
+Line 11518 (label        ???) -> 3000
+Line 11523 (label        ???) -> 3000
+Line 11525 (label        ???) -> 3000
+Line 11532 (label        ???) -> 3000
+Line 11536 (label        ???) -> 3000
+Line 11541 (label        ???) -> 3000
+Line 11548 (label        ???) -> 3000
+Line 11553 (label        ???) -> 3000
+Line 11555 (label        ???) -> 3000
+Line 11562 (label        ???) -> 3000
+Line 11567 (label        ???) -> 3000
+Line 11569 (label        ???) -> 3000
+Line 11574 (label        ???) -> 3000
+Line 11576 (label        ???) -> 3000
+Line 11581 (label        ???) -> 3000
+Line 11588 (label        ???) -> 3000
+Line 11593 (label        ???) -> 3000
+Line 11598 (label        ???) -> 3000
+Line 11600 (label        ???) -> 3000
+Line 11610 (label        ???) -> 3000
+Line 11612 (label        ???) -> 3000
+Line 11617 (label        ???) -> 3000
+Line 11619 (label        ???) -> 3000
+Line 11624 (label        ???) -> 3000
+Line 11626 (label        ???) -> 3000
+Line 11631 (label        ???) -> 3000
+Line 11633 (label        ???) -> 3000
+Line 11638 (label        ???) -> 3000
+Line 11640 (label        ???) -> 3000
+Line 11643 (label        ???) -> 3000
+Line 11646 (label        ???) -> 3000
+Line 11651 (label        ???) -> 3000
+Line 11653 (label        ???) -> 3000
+Line 11663 (label        ???) -> 3000
+Line 11665 (label        ???) -> 3000
+Line 11670 (label        ???) -> 3000
+Line 11672 (label        ???) -> 3000
+Line 11677 (label        ???) -> 3000
+Line 11680 (label        ???) -> 3000
+Line 11685 (label        ???) -> 3000
+Line 11687 (label        ???) -> 3000
+Line 11690 (label        ???) -> 3000
+Line 11698 (label        ???) -> 3000
+Line 11703 (label        ???) -> 3000
+Line 11705 (label        ???) -> 3000
+Line 11708 (label        ???) -> 3000
+Line 11713 (label        ???) -> 3000
+Line 11715 (label        ???) -> 3000
+Line 11720 (label        ???) -> 3000
+Line 11722 (label        ???) -> 3000
+Line 11727 (label        ???) -> 3000
+Line 11729 (label        ???) -> 3000
+Line 11733 (label        ???) -> 3000
+Line 11735 (label        ???) -> 3000
+Line 11739 (label        ???) -> 3000
+Line 11742 (label        ???) -> 3000
+Line 11747 (label        ???) -> 3000
+Line 11752 (label        ???) -> 3000
+Line 11755 (label        ???) -> 2999
+Line 11759 (label        ???) -> 3000
+Line 11761 (label        ???) -> 3000
+Line 11766 (label        ???) -> 3000
+Line 11768 (label        ???) -> 3000
+Line 11773 (label        ???) -> 3000
+Line 11775 (label        ???) -> 3000
+Line 11778 (label        ???) -> 3000
+Line 11781 (label        ???) -> 3000
+Line 11784 (label        ???) -> 3000
+Line 11789 (label        ???) -> 3000
+Line 11791 (label        ???) -> 3000
+Line 11794 (label        ???) -> 3000
+Line 11797 (label        ???) -> 3000
+Line 11809 (label        ???) -> 3000
+Line 11811 (label        ???) -> 3000
+Line 11816 (label        ???) -> 3000
+Line 11818 (label        ???) -> 3000
+Line 11823 (label        ???) -> 3000
+Line 11828 (label        ???) -> 3000
+Line 11830 (label        ???) -> 3000
+Line 11837 (label        ???) -> 3000
+Line 11840 (label        ???) -> 3000
+Line 11844 (label        ???) -> 2999
+Line 11852 (label        ???) -> 3000
+Line 11856 (label        ???) -> 3000
+Line 11859 (label        ???) -> 3000
+Line 11862 (label        ???) -> 3000
+Line 11865 (label        ???) -> 3000
+Line 11870 (label        ???) -> 3000
+Line 11872 (label        ???) -> 3000
+Line 11877 (label        ???) -> 3000
+Line 11879 (label        ???) -> 3000
+Line 11883 (label        ???) -> 3000
+Line 11885 (label        ???) -> 3000
+Line 11890 (label        ???) -> 3000
+Line 11892 (label        ???) -> 3000
+Line 11896 (label        ???) -> 3000
+Line 11901 (label        ???) -> 3000
+Line 11903 (label        ???) -> 3000
+Line 11908 (label        ???) -> 3000
+Line 11910 (label        ???) -> 3000
+Line 11917 (label        ???) -> 3069
+Line 11920 (label        ???) -> 3000
+Line 11930 (label        ???) -> 3000
+Line 11935 (label        ???) -> 3000
+Line 11937 (label        ???) -> 3000
+Line 11942 (label        ???) -> 3000
+Line 11944 (label        ???) -> 3000
+Line 11948 (label        ???) -> 3000
+Line 11952 (label        ???) -> 3000
+Line 11956 (label        ???) -> 3000
+Line 11962 (label        ???) -> 3000
+Line 11964 (label        ???) -> 3000
+Line 11969 (label        ???) -> 3000
+Line 11976 (label        ???) -> 3000
+Line 11978 (label        ???) -> 3000
+Line 11984 (label        ???) -> 3000
+Line 11989 (label        ???) -> 3000
+Line 11991 (label        ???) -> 3000
+Line 11996 (label        ???) -> 3000
+Line 11998 (label        ???) -> 3000
+Line 12003 (label        ???) -> 3000
+Line 12005 (label        ???) -> 3000
+Line 12012 (label        ???) -> 3000
+Line 12019 (label        ???) -> 3000
+Line 12022 (label        ???) -> 3000
+Line 12027 (label        ???) -> 3000
+Line 12029 (label        ???) -> 3000
+Line 12031 (label        ???) -> 3000
+Line 12036 (label        ???) -> 3000
+Line 12041 (label        ???) -> 3000
+Line 12043 (label        ???) -> 3000
+Line 12048 (label        ???) -> 3000
+Line 12050 (label        ???) -> 3000
+Line 12053 (label        ???) -> 3000
+Line 12056 (label        ???) -> 3000
+Line 12061 (label        ???) -> 3000
+Line 12063 (label        ???) -> 3000
+Line 12068 (label        ???) -> 3000
+Line 12070 (label        ???) -> 3000
+Line 12075 (label        ???) -> 3000
+Line 12077 (label        ???) -> 3000
+Line 12080 (label        ???) -> 3000
+Line 12084 (label        ???) -> 3000
+Line 12120 (label        ???) -> 9998
+Line 12127 (label        ???) -> 9998
+Line 12139 (label        ???) -> 9998
+Line 12149 (label        ???) -> 10000
+Line 12155 (label        ???) -> 9999
+Line 12162 (label        ???) -> 39760
+Line 12166 (label        ???) -> 39770
+Line 12170 (label        ???) -> 39780
+Line 12174 (label        ???) -> 39790
+Line 12178 (label        ???) -> 39800
+Line 12181 (label        ???) -> 39900
+Line 12184 (label        ???) -> 39900
+Line 12191 (label        ???) -> 39900
+Line 12199 (label        ???) -> 39890
+Line 12209 (label        ???) -> 39900
+Line 12218 (label        ???) -> 39890
+Line 12226 (label        ???) -> 39890
+Line 12260 (label        ???) -> 39900
+Line 12264 (label        ???) -> 39900
+Line 12272 (label        ???) -> 39900
+Line 12279 (label        ???) -> 39890
+Line 12287 (label        ???) -> 39890
+Line 12294 (label        ???) -> 39900
+Line 12325 (label        ???) -> 35000
+Line 12333 (label        ???) -> 35000
+Line 12341 (label        ???) -> 35000
+Line 12349 (label        ???) -> 35000
+Line 12355 (label        ???) -> 35000
+Line 12365 (label        ???) -> 35000
+Line 12370 (label        ???) -> 35000
+Line 12375 (label        ???) -> 35000
+Line 12381 (label        ???) -> 36000
+Line 12386 (label        ???) -> 36000
+Line 12391 (label        ???) -> 35000
+Line 12408 (label        ???) -> 35000
+Line 12413 (label        ???) -> 35000
+Line 12416 (label        ???) -> 35000
+Line 12424 (label        ???) -> 35000
+Line 12435 (label        ???) -> 40000
+Line 12450 (label        ???) -> 40000
+Line 12452 (label        ???) -> 35000
+Line 12457 (label        ???) -> 35000
+Line 12468 (label        ???) -> 36000
+Line 12474 (label        ???) -> 36000
+Line 12478 (label        ???) -> 36000
+Line 12488 (label        ???) -> 36000
+Line 12509 (label        ???) -> 40000
+Line 12531 (label        ???) -> 40000
+Line 12533 (label        ???) -> 36000
+Line 12543 (label        ???) -> 36000
+Line 12549 (label        ???) -> 36000
+Line 12553 (label        ???) -> 36000
+Line 12563 (label        ???) -> 36000
+Line 12571 (label        ???) -> 36000
+Line 12579 (label        ???) -> 36000
+Line 12585 (label        ???) -> 36000
+Line 12596 (label        ???) -> 36000
+Line 12604 (label        ???) -> 35000
+Line 12615 (label        ???) -> 40000
+Line 12628 (label        ???) -> 40000
+Line 12630 (label        ???) -> 36000
+Line 12636 (label        ???) -> 36000
+Line 12640 (label        ???) -> 36000
+Line 12653 (label        ???) -> 40000
+Line 12656 (label        ???) -> 36000
+Line 12667 (label        ???) -> 40000
+Line 12669 (label        ???) -> 36000
+Line 12685 (label        ???) -> 40000
+Line 12689 (label        ???) -> 36000
+Line 12701 (label        ???) -> 40000
+Line 12703 (label        ???) -> 36000
+Line 12708 (label        ???) -> 37000
+Line 12711 (label        ???) -> 38000
+Line 12714 (label        ???) -> 39000
+Line 12717 (label        ???) -> 39500
+Line 12721 (label        ???) -> 39750
+Line 12734 (label        ???) -> 40000
+Line 12736 (label        ???) -> 36000
+Line 12740 (label        ???) -> 36000
+Line 12745 (label        ???) -> 36000
+Line 12752 (label        ???) -> 36000
+Line 12757 (label        ???) -> 36000
+Line 12760 (label        ???) -> 36000
+Line 12764 (label        ???) -> 36000
+Line 12771 (label        ???) -> 36000
+Line 12781 (label        ???) -> 36000
+Line 12787 (label        ???) -> 36000
+Line 12795 (label        ???) -> 36000
+Line 12798 (label        ???) -> 36000
+Line 12808 (label        ???) -> 40000
+Line 12829 (label        ???) -> 1000005
+Line 12832 (label        ???) -> 1000005
+Line 12834 (label        ???) -> 1000000
+Line 12837 (label        ???) -> 1000005
+Line 12840 (label        ???) -> 1000005
+Line 12843 (label        ???) -> 1000005
+Line 12846 (label        ???) -> 1000005
+Line 12849 (label        ???) -> 1000005
+Line 12852 (label        ???) -> 1000005
+Line 12862 (label        ???) -> 1000005
+Line 12934 (label        ???) -> 1000005
+Line 12946 (label        ???) -> 1.2
+Line 12947 (label        ???) -> 1.3
+Line 12948 (label        ???) -> 1.7
+Line 12952 (label        ???) -> 1.1
+Line 12963 (label        ???) -> 1.05
+Line 12967 (label        ???) -> 1.05
+Line 12971 (label        ???) -> 1.05
+Line 12976 (label        ???) -> 1.25
+Line 12996 (label        ???) -> 1.3
+Line 13004 (label        ???) -> 1.3
+Line 13013 (label        ???) -> 1.3
+Line 13026 (label        ???) -> 1.3
+Line 13028 (label        ???) -> 1.05
+Line 13032 (label        ???) -> 1.35
+Line 13039 (label        ???) -> 9900
+Line 13047 (label        ???) -> 9900
+Line 13053 (label        ???) -> 19999.9
+Line 13059 (label        ???) -> 19999.9
+Line 13065 (label        ???) -> 19999.9
+Line 13071 (label        ???) -> 19999.9
+Line 13077 (label        ???) -> 19999.9
+Line 13083 (label        ???) -> 19999.9
+Line 13089 (label        ???) -> 19999.9
+Line 13095 (label        ???) -> 19999.9
+Line 13101 (label        ???) -> 19999.9
+Line 13107 (label        ???) -> 19999.9
+Line 13115 (label        ???) -> 9900
+Line 13145 (label        ???) -> 445
+Line 13146 (label        ???) -> 450
+Line 13147 (label        ???) -> 460
+Line 13148 (label        ???) -> 470
+Line 13150 (label        ???) -> 431
+Line 13159 (label        ???) -> 431
+Line 13165 (label        ???) -> 431
+Line 13198 (label        ???) -> 430
+Line 13202 (label        ???) -> 430
+Line 13211 (label        ???) -> 430
+Line 13215 (label        ???) -> 430
+Line 13224 (label        ???) -> 430
+Line 13228 (label        ???) -> 430
+Line 13237 (label        ???) -> 430
+Line 13241 (label        ???) -> 430
+Line 13250 (label        ???) -> 430
+Line 13254 (label        ???) -> 430
+Line 13263 (label        ???) -> 430
+Line 13267 (label        ???) -> 430
+Line 13276 (label        ???) -> 430
+Line 13280 (label        ???) -> 430
+Line 13289 (label        ???) -> 430
+Line 13293 (label        ???) -> 430
+Line 13302 (label        ???) -> 430
+Line 13306 (label        ???) -> 430
+Line 13316 (label        ???) -> 430
+Line 13320 (label        ???) -> 430
+Line 13330 (label        ???) -> 430
+Line 13334 (label        ???) -> 430
+Line 13343 (label        ???) -> 430
+Line 13347 (label        ???) -> 430
+Line 13356 (label        ???) -> 430
+Line 13360 (label        ???) -> 430
+Line 13369 (label        ???) -> 430
+Line 13373 (label        ???) -> 430
+Line 13382 (label        ???) -> 430
+Line 13386 (label        ???) -> 430
+Line 13391 (label        ???) -> 430
+Line 13405 (label        ???) -> 430
+Line 13419 (label        ???) -> 430
+Line 13433 (label        ???) -> 430
+Line 13447 (label        ???) -> 430
+Line 13461 (label        ???) -> 430
+Line 13475 (label        ???) -> 430
+Line 13489 (label        ???) -> 430
+Line 13503 (label        ???) -> 430
+Line 13517 (label        ???) -> 430
+Line 13531 (label        ???) -> 430
+Line 13545 (label        ???) -> 430
+Line 13559 (label        ???) -> 430
+Line 13573 (label        ???) -> 430
+Line 13587 (label        ???) -> 430
+Line 13601 (label        ???) -> 430
+Line 13615 (label        ???) -> 430
+Line 13629 (label        ???) -> 430
+Line 13635 (label        ???) -> 430
+Line 13803 (label        ???) -> 100001
+Line 14108 (label        ???) -> 10000.15
+Line 14115 (label        ???) -> 10000.1
+Line 14117 (label        ???) -> 10000.1
+Line 14119 (label        ???) -> 10000.1
+Line 14125 (label        ???) -> 10000.15
+Line 14132 (label        ???) -> 10000.1
+Line 14134 (label        ???) -> 10000.1
+Line 14136 (label        ???) -> 10000.1
+Line 14142 (label        ???) -> 10000.15
+Line 14148 (label        ???) -> 10000.1
+Line 14154 (label        ???) -> 10000.15
+Line 14161 (label        ???) -> 10000.1
+Line 14163 (label        ???) -> 10000.1
+Line 14165 (label        ???) -> 10000.1
+Line 14171 (label        ???) -> 10000.15
+Line 14178 (label        ???) -> 10000.1
+Line 14180 (label        ???) -> 10000.1
+Line 14187 (label        ???) -> 10000.15
+Line 14193 (label        ???) -> 10000.1
+Line 14199 (label        ???) -> 10000.15
+Line 14207 (label        ???) -> 10000.1
+Line 14213 (label        ???) -> 10000.15
+Line 14220 (label        ???) -> 10000.1
+Line 14226 (label        ???) -> 10000.15
+Line 14231 (label        ???) -> 10000.1
+Line 14237 (label        ???) -> 10000.15
+Line 14242 (label        ???) -> 10000.1
+Line 14249 (label        ???) -> 10000.15
+Line 14256 (label        ???) -> 10000.1
+Line 14263 (label        ???) -> 10000.15
+Line 14270 (label        ???) -> 10000.1
+Line 14272 (label        ???) -> 10000.1
+Line 14317 (label        ???) -> 3990
+Line 14325 (label        ???) -> 3976
+Line 14329 (label        ???) -> 3977
+Line 14333 (label        ???) -> 3978
+Line 14337 (label        ???) -> 3979
+Line 14341 (label        ???) -> 3980
+Line 14344 (label        ???) -> 3990
+Line 14349 (label        ???) -> 3990
+Line 14356 (label        ???) -> 3990
+Line 14364 (label        ???) -> 3990
+Line 14374 (label        ???) -> 3990
+Line 14383 (label        ???) -> 3989
+Line 14390 (label        ???) -> 3990
+Line 14394 (label        ???) -> 3990
+Line 14404 (label        ???) -> 3989
+Line 14411 (label        ???) -> 3990
+Line 14444 (label        ???) -> 4001
+Line 14459 (label        ???) -> 3500
+Line 14467 (label        ???) -> 3500
+Line 14475 (label        ???) -> 3500
+Line 14483 (label        ???) -> 3500
+Line 14489 (label        ???) -> 3500
+Line 14501 (label        ???) -> 4001
+Line 14504 (label        ???) -> 3500
+Line 14509 (label        ???) -> 4001
+Line 14514 (label        ???) -> 3500
+Line 14519 (label        ???) -> 3500
+Line 14527 (label        ???) -> 4001
+Line 14530 (label        ???) -> 3600
+Line 14535 (label        ???) -> 4001
+Line 14539 (label        ???) -> 3600
+Line 14544 (label        ???) -> 3500
+Line 14579 (label        ???) -> 3500
+Line 14584 (label        ???) -> 3500
+Line 14587 (label        ???) -> 3500
+Line 14601 (label        ???) -> 4000
+Line 14606 (label        ???) -> 4001
+Line 14613 (label        ???) -> 4001
+Line 14625 (label        ???) -> 4000
+Line 14627 (label        ???) -> 3500
+Line 14631 (label        ???) -> 3500
+Line 14637 (label        ???) -> 4001
+Line 14650 (label        ???) -> 3600
+Line 14656 (label        ???) -> 3600
+Line 14660 (label        ???) -> 3600
+Line 14670 (label        ???) -> 3600
+Line 14692 (label        ???) -> 4000
+Line 14695 (label        ???) -> 3600
+Line 14716 (label        ???) -> 4000
+Line 14718 (label        ???) -> 3600
+Line 14728 (label        ???) -> 3600
+Line 14734 (label        ???) -> 3600
+Line 14738 (label        ???) -> 3600
+Line 14748 (label        ???) -> 3600
+Line 14756 (label        ???) -> 3600
+Line 14764 (label        ???) -> 3600
+Line 14770 (label        ???) -> 3600
+Line 14781 (label        ???) -> 3600
+Line 14795 (label        ???) -> 4000
+Line 14800 (label        ???) -> 4001
+Line 14807 (label        ???) -> 4001
+Line 14819 (label        ???) -> 4000
+Line 14821 (label        ???) -> 3600
+Line 14827 (label        ???) -> 3600
+Line 14831 (label        ???) -> 3600
+Line 14845 (label        ???) -> 4000
+Line 14850 (label        ???) -> 4001
+Line 14854 (label        ???) -> 3600
+Line 14859 (label        ???) -> 4001
+Line 14872 (label        ???) -> 4000
+Line 14874 (label        ???) -> 3600
+Line 14890 (label        ???) -> 4000
+Line 14895 (label        ???) -> 4001
+Line 14899 (label        ???) -> 3600
+Line 14904 (label        ???) -> 4001
+Line 14917 (label        ???) -> 4000
+Line 14919 (label        ???) -> 3600
+Line 14924 (label        ???) -> 3700
+Line 14927 (label        ???) -> 3800
+Line 14930 (label        ???) -> 3900
+Line 14933 (label        ???) -> 3950
+Line 14937 (label        ???) -> 3975
+Line 14951 (label        ???) -> 4000
+Line 14953 (label        ???) -> 3600
+Line 14957 (label        ???) -> 3600
+Line 14962 (label        ???) -> 3600
+Line 14969 (label        ???) -> 3600
+Line 14974 (label        ???) -> 3600
+Line 14977 (label        ???) -> 3600
+Line 14981 (label        ???) -> 3600
+Line 14988 (label        ???) -> 3600
+Line 15011 (label        ???) -> 4001
+Line 15014 (label        ???) -> 3600
+Line 15015 (label        ???) -> 3600
+Line 15029 (label        ???) -> 3600
+Line 15037 (label        ???) -> 3600
+Line 15040 (label        ???) -> 3600
+Line 15051 (label        ???) -> 4000
+Line 15075 (label        ???) -> 4001
+Line 15091 (label        ???) -> 4001
+Line 15107 (label        ???) -> 4001
+Line 15123 (label        ???) -> 4001
+Line 15139 (label        ???) -> 4001
