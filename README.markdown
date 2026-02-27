@@ -1,4 +1,4 @@
-# Description
+# Seven Helms
 This is a BASIC program written by Matt Terry and Will Howard during their early high school years while learning programming.  The source code is absolutely atrocious and the writing is terrible - nevertheless it is wonderfully nostalgic which is the only reason you're finding it here.
 
 Most of the original source code is as is, we were actually unable to find the final build of the game but instead found this version which is very close to the last build of the program. However the game does error out in the end and you may find a few bugs elsewhere in the program since it's not "complete".
@@ -34,3 +34,14 @@ I've updated this program to compile with FreeBasic (http://www.freebasic.net/) 
 ### Windows Users
 
 1. Try to be as awesome as Linux
+
+# Documentation
+
+Control flow analysis, architecture diagrams, and game documentation are available in the [`docs/`](docs/README.md) directory.
+
+| Section | Description |
+|---------|-------------|
+| [Analysis](docs/analysis/MUD2-Analysis-Summary.md) | Statistics, patterns, and methodology |
+| [Architecture](docs/architecture/MUD2-Architecture-C4.md) | C4 model, component diagram, data model |
+| [State Diagrams](docs/states/MUD2-State-Diagram-HighLevel.md) | Game flow as a state machine |
+| [Flowcharts](docs/graphs/MUD2-Complete-Graph.md) | Control flow graphs by functional area |

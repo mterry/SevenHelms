@@ -20,35 +20,35 @@ Based on comments in the source code and label analysis, MUD2.BAS is organized i
 - **GOTO Connections**: 25
 - **Purpose**: Character creation system including name, gender, class selection, and familiar choice
 - **Key Labels**: 0, 10, 21, 21.5, 22, 24, 25
-- **Graph**: `MUD2-Character-Creation.md`
+- **Graph**: [`MUD2-Character-Creation.md`](../graphs/MUD2-Character-Creation.md)
 
 ### 2. Act 1 - Encampment & Labyrinth Level 1 (Labels 200-399)
 - **Labels**: 41
 - **GOTO Connections**: 103
 - **Purpose**: First dungeon level navigation, including the encampment and initial labyrinth areas
 - **Key Areas**: Areas 1-16 (labels 209-395)
-- **Graph**: `MUD2-Navigation-Act1-Level1.md`
+- **Graph**: [`MUD2-Navigation-Act1-Level1.md`](../graphs/MUD2-Navigation-Act1-Level1.md)
 
 ### 3. Equipment & Shop System (Labels 400-499)
 - **Labels**: 8
 - **GOTO Connections**: 8
 - **Purpose**: Equipment management and shop interactions
 - **Key Labels**: 400, 410, 430, 431, 445, 450, 460, 470
-- **Graph**: `MUD2-Equipment-Shop.md`
+- **Graph**: [`MUD2-Equipment-Shop.md`](../graphs/MUD2-Equipment-Shop.md)
 
 ### 4. Act 1 - Labyrinth Levels 2-3 (Labels 500-699)
 - **Labels**: 41
 - **GOTO Connections**: 94
 - **Purpose**: Deeper dungeon levels with more complex navigation
 - **Key Areas**: Areas 17-31 (labels 500-645)
-- **Graph**: `MUD2-Navigation-Act1-Levels2-3.md`
+- **Graph**: [`MUD2-Navigation-Act1-Levels2-3.md`](../graphs/MUD2-Navigation-Act1-Levels2-3.md)
 
 ### 5. Act 1 - Encampment Areas (Labels 700-999)
 - **Labels**: 74
 - **GOTO Connections**: 166
 - **Purpose**: Extended encampment exploration areas
 - **Key Areas**: Areas 35-67 (labels 680-997)
-- **Graph**: `MUD2-Navigation-Encampment.md`
+- **Graph**: [`MUD2-Navigation-Encampment.md`](../graphs/MUD2-Navigation-Encampment.md)
 
 ### 6. Battle System (Labels 1-2500)
 - **Labels**: 22
@@ -57,7 +57,7 @@ Based on comments in the source code and label analysis, MUD2.BAS is organized i
 - **Components**:
   - Basic Battle System (labels 1-16, 2000-2500)
   - Advanced Battle System (labels 1000-1510)
-- **Graph**: `MUD2-Battle-System.md`
+- **Graph**: [`MUD2-Battle-System.md`](../graphs/MUD2-Battle-System.md)
 
 ### 7. Magic/Runes & Boss Battles (Labels 3000-4001)
 - **Labels**: 131
@@ -66,14 +66,14 @@ Based on comments in the source code and label analysis, MUD2.BAS is organized i
 - **Key Systems**:
   - Rune magic (labels 3000-3100)
   - Xanathus boss battle (labels 3500-4001)
-- **Graph**: `MUD2-Boss-Battles.md`
+- **Graph**: [`MUD2-Boss-Battles.md`](../graphs/MUD2-Boss-Battles.md)
 
 ### 8. Main Menu & System (Labels 9000-11000)
 - **Labels**: 16
 - **GOTO Connections**: 12
 - **Purpose**: Main menu, save/load system, and game management
 - **Key Labels**: 9998-10000 (main menu), 99998-100002 (save/load)
-- **Graph**: `MUD2-Menu-System.md`
+- **Graph**: [`MUD2-Menu-System.md`](../graphs/MUD2-Menu-System.md)
 
 ### 9. Necrotalia Boss Battle (Labels 35000-40000, 1000000+)
 - **Labels**: Included in Boss Battles graph
@@ -104,15 +104,15 @@ Menu systems use a loop structure:
 
 ## Graph Files Generated
 
-1. **MUD2-Complete-Graph.md** - Complete control flow with all 362 labels and 742 edges
-2. **MUD2-Character-Creation.md** - Character creation flow (23 nodes, 25 edges)
-3. **MUD2-Navigation-Act1-Level1.md** - First dungeon level (41 nodes, 103 edges)
-4. **MUD2-Navigation-Act1-Levels2-3.md** - Deeper dungeon levels (41 nodes, 94 edges)
-5. **MUD2-Navigation-Encampment.md** - Encampment areas (74 nodes, 166 edges)
-6. **MUD2-Battle-System.md** - Combat mechanics (22 nodes, 17 edges)
-7. **MUD2-Boss-Battles.md** - Boss battles and magic (131 nodes, 136 edges)
-8. **MUD2-Equipment-Shop.md** - Equipment system (8 nodes, 8 edges)
-9. **MUD2-Menu-System.md** - Menus and save/load (16 nodes, 12 edges)
+1. [MUD2-Complete-Graph.md](../graphs/MUD2-Complete-Graph.md) - Complete control flow with all 362 labels and 742 edges
+2. [MUD2-Character-Creation.md](../graphs/MUD2-Character-Creation.md) - Character creation flow (23 nodes, 25 edges)
+3. [MUD2-Navigation-Act1-Level1.md](../graphs/MUD2-Navigation-Act1-Level1.md) - First dungeon level (41 nodes, 103 edges)
+4. [MUD2-Navigation-Act1-Levels2-3.md](../graphs/MUD2-Navigation-Act1-Levels2-3.md) - Deeper dungeon levels (41 nodes, 94 edges)
+5. [MUD2-Navigation-Encampment.md](../graphs/MUD2-Navigation-Encampment.md) - Encampment areas (74 nodes, 166 edges)
+6. [MUD2-Battle-System.md](../graphs/MUD2-Battle-System.md) - Combat mechanics (22 nodes, 17 edges)
+7. [MUD2-Boss-Battles.md](../graphs/MUD2-Boss-Battles.md) - Boss battles and magic (131 nodes, 136 edges)
+8. [MUD2-Equipment-Shop.md](../graphs/MUD2-Equipment-Shop.md) - Equipment system (8 nodes, 8 edges)
+9. [MUD2-Menu-System.md](../graphs/MUD2-Menu-System.md) - Menus and save/load (16 nodes, 12 edges)
 
 ## Notable Observations
 
